@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h1`
+  user-select: none;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;

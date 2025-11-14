@@ -22,3 +22,13 @@ export const SetListData = [
   { order: 16, title: "그날들", artist: "정승환" },
 ];
 // 이런식으로 더미데이터 넣으시면 됩니다.
+
+// src/mocks/dummyProducts.js
+export const dummyProducts = [
+  { name: "아이폰 15 Pro", price: 1550000, discount: 15, image: "/images/iphone.jpg" },
+  { name: "로지텍 마우스", price: 139000, discount: 20, image: "/images/mouse.jpg" },
+  { name: "에스티로더 세럼", price: 120000, discount: 10, image: "/images/serum.jpg" },
+  { name: "아크테릭스 재킷", price: 890000, discount: 20, image: "/images/jacket.jpg" },
+  { name: "애플워치 울트라", price: 1190000, discount: 5, image: "/images/watch.jpg" },
+];
+

@@ -1,6 +1,8 @@
 import React from "react";
-import SearchBar from "./SearchBar";
+import SearchBar from "../Common/SearchBar";
 import styled from "styled-components";
+import ProductList from "./ProductList";
+import { dummyProducts } from "../../mocks/setListData";
 
 // ✅ 화면 전체 폭으로 검색바가 확장되게
 const FullWidthSection = styled.section`
@@ -19,6 +21,7 @@ const Home = () => {
   return (
     <FullWidthSection>
       <SearchBar onSearch={handleSearch} />
+      <ProductList products={dummyProducts} />
     </FullWidthSection>
   );
 };
