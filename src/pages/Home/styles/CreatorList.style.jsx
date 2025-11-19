@@ -1,9 +1,10 @@
+// src/pages/Home/styles/CreatorList.style.jsx
 import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
   margin-top: 40px;
-  padding: 0 2rem;
+  padding: 0 2rem 40px 2rem; 
   box-sizing: border-box;
 `;
 
@@ -32,11 +33,10 @@ export const NavButton = styled.button`
   background: #fff;
   border-radius: 6px;
   cursor: pointer;
-  color: #333;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #333;
 
   &:disabled {
     opacity: 0.4;
@@ -60,4 +60,3 @@ export const SliderTrack = styled.div`
 
   transform: translateX(${(props) => props.index * -295}px);
 `;
-
