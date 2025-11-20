@@ -32,3 +32,13 @@ export const dummyProducts = [
   { name: "애플워치 울트라", price: 1190000, discount: 5, image: "/images/watch.jpg" },
 ];
 
+// src/mocks/dummyCreators.js
+export const dummyCreators = [
+  { id: 1, name: "이사배", category: "뷰티", rank: 1, image: "/images/creator/risabae.png" },
+  { id: 2, name: "침착맨", category: "테크", rank: 2, image: "/images/creator/chimchak.png"},
+  { id: 3, name: "원지", category: "패션", rank: 3, image: "/images/creator/wonji.png"},
+  { id: 4, name: "보겸", category: "라이프", rank: 4, image: "/images/creator/bokyum.png"},
+  { id: 5, name: "꿀주부", category: "리빙", rank: 5, image: "/images/creator/home.png"},
+  { id: 6, name: "테스터훈", category: "테크", rank: 6, image: "/images/creator/testerhoon.png"},
+];
+
