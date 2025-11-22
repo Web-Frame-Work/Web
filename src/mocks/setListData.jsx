@@ -42,3 +42,24 @@ export const dummyCreators = [
   { id: 6, name: "테스터훈", category: "테크", rank: 6, image: "/images/creator/testerhoon.png"},
 ];
 
+// src/mocks/productDetailData.js
+export const productData = {
+  id: 'product-wh-ch720n', 
+  category: '소니',
+  name: '소니 노이즈캔슬링 무선 헤드폰 WH-CH720N',   
+  originalPrice: '709,000원',
+  discountRate: '10%',
+  price: '567,890원',
+  imageUrl: 'https://i.imgur.com/example.png', // 실제 이미지 URL로 변경 필요
+};
+
+export const defaultReviews = [
+  { id: 1, user: 'user1', date: '2025.01.16', text: '정말 만족스러운 제품입니다!', rating: 5 },
+  { id: 2, user: 'user2', date: '2025.01.17', text: '정말 만족스러운 제품입니다!', rating: 5 },
+  { id: 3, user: 'user3', date: '2025.01.18', text: '정말 만족스러운 제품입니다!', rating: 5 },
+];
+
+export const recommendedCreators = [
+  { name: '잇섭', imageUrl: 'https://i.imgur.com/itssup.png' }, // 실제 이미지 URL로 변경 필요
+  { name: 'User2', imageUrl: 'https://i.imgur.com/user2.png' }, // 실제 이미지 URL로 변경 필요
+];
