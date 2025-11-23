@@ -4,6 +4,7 @@ import Home from '../pages/Home/Home';
 import NotFound from '../pages/NotFound';
 import ProductDetailPage from '../pages/Detail/ProductDetailPage';
 import CreatorDetailPage from '../pages/Creator/CreatorDetailPage';
+import Search from '../pages/Search/Search';
 
 const router = createBrowserRouter([
   {
@@ -11,9 +12,10 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <NotFound />,
     children: [
-      { index: true, element: <Home /> }, 
-      { path: '/detail/:id', element: <ProductDetailPage /> }, 
-      { path: '/creator/:id', element: <CreatorDetailPage /> }
+      { index: true, element: <Home /> },
+      { path: '/detail/:id', element: <ProductDetailPage /> },
+      { path: '/creator/:id', element: <CreatorDetailPage /> },
+      { path: '/search', element: <Search /> },
     ],
   },
 ]);
