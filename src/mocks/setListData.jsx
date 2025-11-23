@@ -25,12 +25,19 @@ export const SetListData = [
 
 // src/mocks/dummyProducts.js
 export const dummyProducts = [
-  { name: "아이폰 15 Pro", price: 1550000, discount: 15, image: "/images/iphone.jpg" },
-  { name: "로지텍 마우스", price: 139000, discount: 20, image: "/images/mouse.jpg" },
-  { name: "에스티로더 세럼", price: 120000, discount: 10, image: "/images/serum.jpg" },
-  { name: "아크테릭스 재킷", price: 890000, discount: 20, image: "/images/jacket.jpg" },
-  { name: "애플워치 울트라", price: 1190000, discount: 5, image: "/images/watch.jpg" },
+  { id: 101, name: "아이폰 15 Pro", price: 1550000, discount: 15, image: "/images/iphone.jpg" },
+  { id: 102, name: "로지텍 마우스", price: 139000, discount: 20, image: "/images/mouse.jpg" },
+  { id: 103, name: "에스티로더 세럼", price: 120000, discount: 10, image: "/images/serum.jpg" },
+  { id: 104, name: "아크테릭스 재킷", price: 890000, discount: 20, image: "/images/jacket.jpg" },
+  { id: 105, name: "애플워치 울트라", price: 1190000, discount: 5, image: "/images/watch.jpg" },
+  { id: 106, name: "다이슨 에어랩", price: 699000, discount: 10, image: "/images/airwrap.jpg" },
 ];
+
+//src/mocks/creatorRecommendedProducts.js
+export const creatorRecommendedProducts = {
+  1: [103, 104, 105, 106], // 이사배: 다이슨(106), 에스티로더(103)
+  2: [101, 102], // 침착맨: 아이폰, 마우스
+};
 
 // src/mocks/dummyCreators.js
 export const dummyCreators = [
@@ -54,7 +61,7 @@ export const productData = {
 };
 
 export const defaultReviews = [
-  { id: 1, user: 'user1', date: '2025.01.16', text: '정말 만족스러운 제품입니다!', rating: 5 },
+  { id: 1, user: 'user1',  date: '2025.01.16', text: '정말 만족스러운 제품입니다!', rating: 5 },
   { id: 2, user: 'user2', date: '2025.01.17', text: '정말 만족스러운 제품입니다!', rating: 5 },
   { id: 3, user: 'user3', date: '2025.01.18', text: '정말 만족스러운 제품입니다!', rating: 5 },
 ];
