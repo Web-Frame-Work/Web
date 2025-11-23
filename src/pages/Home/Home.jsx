@@ -1,10 +1,11 @@
-import React from "react";
-import SearchBar from "../Common/SearchBar";
-import styled from "styled-components";
-import ProductList from "./ProductList";
-import { dummyProducts } from "../../mocks/setListData";
-import CreatorList from "./CreatorList";
-import { dummyCreators } from "../../mocks/setListData";
+import React from 'react';
+import SearchBar from '../Common/SearchBar';
+import styled from 'styled-components';
+import ProductList from './ProductList';
+import { dummyProducts } from '../../mocks/setListData';
+import CreatorList from './CreatorList';
+import { dummyCreators } from '../../mocks/setListData';
+import { useNavigate } from 'react-router-dom';
 
 // ✅ 화면 전체 폭으로 검색바가 확장되게
 const FullWidthSection = styled.section`
@@ -16,8 +17,11 @@ const FullWidthSection = styled.section`
 `;
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const handleSearch = (query) => {
-    console.log("검색어:", query);
+    if (!query.trim()) return;
+    navigate(`/search?query=${encodeURIComponent(query)}`);
   };
 
   return (
