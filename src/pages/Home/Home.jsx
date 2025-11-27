@@ -7,6 +7,13 @@ import CreatorList from './CreatorList';
 import { dummyCreators } from '../../mocks/setListData';
 import { useNavigate } from 'react-router-dom';
 
+// JSON mock 데이터 import
+import {
+  creators,
+  products,
+  creatorRecommendedProducts,
+} from "../../mocks/setListData";
+
 // ✅ 화면 전체 폭으로 검색바가 확장되게
 const FullWidthSection = styled.section`
   width: 100vw; /* 브라우저 전체 너비 */
@@ -27,8 +34,8 @@ const Home = () => {
   return (
     <FullWidthSection>
       <SearchBar onSearch={handleSearch} />
-      <ProductList products={dummyProducts} />
-      <CreatorList creators={dummyCreators} />
+      <ProductList products={products} />
+      <CreatorList creators={creators} />
     </FullWidthSection>
   );
 };
