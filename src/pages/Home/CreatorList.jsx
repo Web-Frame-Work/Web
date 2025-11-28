@@ -9,7 +9,6 @@ const CreatorList = ({ creators }) => {
   const visibleCount = 4;
 
   const handlePrev = () => index > 0 && setIndex(index - 1);
-
   const handleNext = () => {
     if (index < creators.length - visibleCount) {
       setIndex(index + 1);
@@ -37,11 +36,12 @@ const CreatorList = ({ creators }) => {
 
       <S.SliderWrapper>
         <S.SliderTrack index={index}>
-          {creators.map((item, index) => (
-            <CreatorCard 
+          {creators.map((item, idx) => (
+            <CreatorCard
               key={item.id}
-              rank={index + 1}   //  순서 전달 (1부터 시작)
-              {...item}
+              id={item.id}              // 반드시 id 전달!
+              rank={idx + 1}            // 순서 전달
+              {...item}                 // name, category, image 등 전달
             />
           ))}
         </S.SliderTrack>
