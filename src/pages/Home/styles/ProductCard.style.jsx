@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Card = styled.div`
   user-select: none;
   width: 260px;
@@ -8,7 +7,7 @@ export const Card = styled.div`
   border-radius: 12px;
   background: #fff;
   overflow: hidden;
-  flex-shrink: 0; /* 슬라이드에서 줄어들지 않음 */
+  flex-shrink: 0;
   cursor: pointer;
   transition: transform 0.2s ease;
 
@@ -17,22 +16,42 @@ export const Card = styled.div`
   }
 `;
 
+export const ImageWrapper = styled.div`
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #fff;
+`;
+
 export const Image = styled.img`
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: contain;
-  display: block;
-  background: #fafafa;
+  object-position: center;
 `;
 
 export const InfoBox = styled.div`
   padding: 12px 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 90px; /* 고정 높이 -> 가격 위치 동일 */
 `;
 
 export const Name = styled.div`
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: 4px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 최대 2줄 */
+  -webkit-box-orient: vertical;
 `;
 
 export const PriceRow = styled.div`
