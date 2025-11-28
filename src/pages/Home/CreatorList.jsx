@@ -37,8 +37,12 @@ const CreatorList = ({ creators }) => {
 
       <S.SliderWrapper>
         <S.SliderTrack index={index}>
-          {creators.map((item) => (
-            <CreatorCard key={item.id} {...item} />
+          {creators.map((item, index) => (
+            <CreatorCard 
+              key={item.id}
+              rank={index + 1}   //  순서 전달 (1부터 시작)
+              {...item}
+            />
           ))}
         </S.SliderTrack>
       </S.SliderWrapper>

@@ -1,5 +1,7 @@
 // src/mocks/setListData.jsx
 
+
+
 export const creators = [
   {
     "id": 1,
@@ -144,7 +146,11 @@ export const productsReviews = [
 
 ]
 
+// 검색화면 탭 구분 위함
+export const creatorNames = creators.map(c => c.name);
+export const productCategories = [...new Set(products.map(p => p.category))];
 
+//=================================================================================================//
 
 export const SetListData = [
   {

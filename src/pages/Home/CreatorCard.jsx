@@ -1,17 +1,16 @@
-// src/pages/Home/CreatorCard.jsx
-import React from "react";
 import * as S from "./styles/CreatorCard.style";
 
-const CreatorCard = ({ name, category, rank, image }) => {
+const CreatorCard = ({ image, name, category, rank }) => {
   return (
     <S.Card>
-      <S.Rank>{rank}</S.Rank>
-
-      <S.Image src={image} alt={name} />
+      <S.ImageWrapper>
+        <S.Image src={image} alt={name} />
+        <S.Rank>{rank}</S.Rank>  {/* 전달받은 랭크 표시 */}
+      </S.ImageWrapper>
 
       <S.InfoBox>
         <S.Name>{name}</S.Name>
-        <S.Category>{category}</S.Category>
+        <S.Category>{Array.isArray(category) ? category.join(" / ") : category}</S.Category>
       </S.InfoBox>
     </S.Card>
   );
