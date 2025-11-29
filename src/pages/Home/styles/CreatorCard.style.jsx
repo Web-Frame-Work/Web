@@ -1,4 +1,3 @@
-// src/pages/Home/styles/CreatorCard.style.jsx
 import styled from "styled-components";
 
 export const Card = styled.div`
@@ -8,9 +7,8 @@ export const Card = styled.div`
   border-radius: 12px;
   background: #fff;
   overflow: hidden;
-  flex-shrink: 0; /* 슬라이드에서 줄어들지 않음 */
+  flex-shrink: 0;
   text-align: center;
-  position: relative;
   cursor: pointer;
   transition: transform 0.2s ease;
 
@@ -19,10 +17,27 @@ export const Card = styled.div`
   }
 `;
 
+/* 🔥 이미지 + Rank를 포함하는 래퍼 */
+export const ImageWrapper = styled.div`
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+`;
+
+/* 이미지 */
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 꽉 채움 */
+  display: block;
+`;
+
+/* 이미지 위에 겹치는 검정 Rank 박스 */
 export const Rank = styled.div`
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 10px; 
+  right: 10px;
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -35,19 +50,9 @@ export const Rank = styled.div`
   font-weight: 600;
 `;
 
-export const Image = styled.img`
-  width: 160px;
-  height: 160px;
-  object-fit: contain;
-  margin: 40px auto 0 auto;
-  display: block;
-  margin-bottom: 20px;
-`;
-
 export const InfoBox = styled.div`
   padding: 12px 16px;
   border-top: 1px solid #eee;
-  margin-top: 5px; /* 이미지와 선 사이 간격 */
 `;
 
 export const Name = styled.div`

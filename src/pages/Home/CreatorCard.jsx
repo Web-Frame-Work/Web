@@ -1,17 +1,28 @@
-// src/pages/Home/CreatorCard.jsx
 import React from "react";
 import * as S from "./styles/CreatorCard.style";
+import { useNavigate } from "react-router-dom";
 
-const CreatorCard = ({ name, category, rank, image }) => {
+const CreatorCard = ({ id, image, name, category, rank }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/creator/${id}`, {
+      state: { id, image, name, category, rank }
+    });
+  };
+
   return (
-    <S.Card>
-      <S.Rank>{rank}</S.Rank>
-
-      <S.Image src={image} alt={name} />
+    <S.Card onClick={handleClick}>
+      <S.ImageWrapper>
+        <S.Image src={image} alt={name} />
+        <S.Rank>{rank}</S.Rank>
+      </S.ImageWrapper>
 
       <S.InfoBox>
         <S.Name>{name}</S.Name>
-        <S.Category>{category}</S.Category>
+        <S.Category>
+          {Array.isArray(category) ? category.join(" / ") : category}
+        </S.Category>
       </S.InfoBox>
     </S.Card>
   );
