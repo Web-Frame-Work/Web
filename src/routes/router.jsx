@@ -6,7 +6,7 @@ import ProductDetailPage from '../pages/Detail/ProductDetailPage';
 import CreatorDetailPage from '../pages/Creator/CreatorDetailPage';
 import Search from '../pages/Search/Search';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter([  
   {
     path: '/',
     element: <RootLayout />,
