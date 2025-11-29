@@ -25,30 +25,33 @@ const StarRatingInput = ({ rating, setRating }) => {
 const ReviewSection = ({ reviews, onSubmitReview }) => {
   const [newReviewRating, setNewReviewRating] = useState(5);
   const [newReviewText, setNewReviewText] = useState('');
-  const [selectedFilter, setSelectedFilter] = useState('ALL');
   
-  // 페이지네이션 상태
+  // 닉네임 상태 관리
+  const [newReviewNickname, setNewReviewNickname] = useState('');
+
+  const [selectedFilter, setSelectedFilter] = useState('ALL');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
 
   // 리뷰 등록 핸들러
   const handleRegisterClick = () => {
-    const isSuccess = onSubmitReview(newReviewText, newReviewRating);
+    // 닉네임도 함께 보냄
+    const isSuccess = onSubmitReview(newReviewText, newReviewRating, newReviewNickname);
+    
     if (isSuccess) {
       setNewReviewText('');
       setNewReviewRating(5);
+      setNewReviewNickname(''); // 닉네임 초기화
       setSelectedFilter('ALL');
       setCurrentPage(1);
     }
   };
 
-  // 필터 변경 핸들러
   const handleFilterChange = (filter) => {
     setSelectedFilter(filter);
     setCurrentPage(1);
   };
 
-  // 필터링 로직
   const getFilteredReviews = () => {
     if (selectedFilter === 'ALL') {
       return reviews;
@@ -57,8 +60,6 @@ const ReviewSection = ({ reviews, onSubmitReview }) => {
   };
 
   const filteredList = getFilteredReviews();
-
-  // 페이지네이션 로직
   const totalPages = Math.ceil(filteredList.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -85,6 +86,13 @@ const ReviewSection = ({ reviews, onSubmitReview }) => {
           <S.RatingNumber>{newReviewRating}점</S.RatingNumber>
         </S.FormRating>
         
+        {/* 닉네임 입력창 */}
+        <S.NicknameInput 
+          placeholder="닉네임을 입력해주세요"
+          value={newReviewNickname}
+          onChange={(e) => setNewReviewNickname(e.target.value)}
+        />
+
         <S.ReviewTextarea
           placeholder="제품에 대한 솔직한 리뷰를 작성해주세요."
           value={newReviewText}
@@ -118,11 +126,11 @@ const ReviewSection = ({ reviews, onSubmitReview }) => {
           currentReviews.map((review) => (
             <S.ReviewItem key={review.id}>
               <S.ReviewHeader>
-                <S.ReviewUser>{review.user}</S.ReviewUser>
+                <S.ReviewUser>{review.nickname}</S.ReviewUser>
                 <S.ReviewItemRating>{'★'.repeat(review.rating)}</S.ReviewItemRating>
               </S.ReviewHeader>
-              <S.ReviewText>{review.text}</S.ReviewText>
-              <S.ReviewDate>{review.date}</S.ReviewDate>
+              <S.ReviewText>{review.comment}</S.ReviewText>
+              <S.ReviewDate>{review.createdAt}</S.ReviewDate>
             </S.ReviewItem>
           ))
         ) : (

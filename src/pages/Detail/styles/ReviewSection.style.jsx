@@ -1,4 +1,3 @@
-    // src/pages/Detail/styles/ReviewSection.style.jsx
 import styled from 'styled-components';
 
 export const ReviewSectionWrapper = styled.section`
@@ -60,6 +59,22 @@ export const RatingNumber = styled.span`
   color: #333;
   margin-left: 4px;
   font-weight: bold;
+`;
+
+// 닉네임 입력창 스타일
+export const NicknameInput = styled.input`
+  width: 200px; /* 적당한 너비 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px; /* 텍스트 영역과의 간격 */
+  display: block; /* 줄바꿈 */
+
+  &:focus {
+    outline: none;
+    border-color: #333;
+  }
 `;
 
 export const ReviewTextarea = styled.textarea`
