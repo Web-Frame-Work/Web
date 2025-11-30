@@ -13,10 +13,28 @@ const CreatorSection = ({ creator }) => {
       <SectionTitle>크리에이터 1</SectionTitle>
 
       <CreatorBox>
-        <CreatorIcon>{creator.icon}</CreatorIcon>
+        <CreatorIcon>
+          <img
+            src={creator.image}
+            alt={creator.name}
+            style={{
+              width: '60px',
+              height: '60px',
+              borderRadius: '50%',
+              objectFit: 'cover',
+            }}
+          />
+        </CreatorIcon>
+
         <CreatorInfo>
           <span>{creator.name}</span>
-          <span>{creator.category}</span>
+
+          <span>
+            {Array.isArray(creator.category)
+              ? creator.category.join(', ')
+              : creator.category}
+          </span>
+
           <span>{creator.followers}</span>
         </CreatorInfo>
       </CreatorBox>
