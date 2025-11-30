@@ -17,57 +17,68 @@ import {
   DetailButton,
 } from '../styles/CategoryProductsSection.styles';
 
-const CategoryProductsSection = ({ products, usedCreator }) => {
+import { getProductRatingInfo, creators } from '../../../mocks/setListData';
+
+const CategoryProductsSection = ({ products }) => {
   return (
     <>
-      <SectionTitle>추천 제품 8</SectionTitle>
+      <SectionTitle>제품 카테고리 검색</SectionTitle>
 
       <ProductList>
-        {products.map((p) => (
-          <ProductCard key={p.id}>
-            <ProductTopRow>
-              <ProductImageBox>
-                <img src={p.image} alt={p.name} />
-              </ProductImageBox>
+        {products.map((p) => {
+          const ratingInfo = getProductRatingInfo(p.id);
 
-              <ProductContent>
-                <ProductName>{p.name}</ProductName>
+          const creator = creators.find((c) => c.id === p.creatorId);
 
-                <ProductDescription>{p.description}</ProductDescription>
+          return (
+            <ProductCard key={p.id}>
+              <ProductTopRow>
+                <ProductImageBox>
+                  <img src={p.image} alt={p.name} />
+                </ProductImageBox>
 
-                <ProductDiscountPriceRow>
-                  <span className="discount">{p.discount}%</span>
-                  <span>₩{p.price.toLocaleString()}</span>
-                </ProductDiscountPriceRow>
+                <ProductContent>
+                  <ProductName>{p.name}</ProductName>
 
-                <ProductRatingRow>
-                  ⭐ {p.rating}
-                  <span className="bar">|</span>
-                  리뷰 {p.reviews.toLocaleString()}
-                </ProductRatingRow>
+                  <ProductDescription>{p.description}</ProductDescription>
 
-                <UsedCreatorRow>
-                  <UsedCreatorLabel>
-                    <span>📷</span>
-                    <span>사용한 크리에이터</span>
-                  </UsedCreatorLabel>
+                  <ProductDiscountPriceRow>
+                    <span className="discount">{p.discount}%</span>
+                    <span>₩{p.price.toLocaleString()}</span>
+                  </ProductDiscountPriceRow>
 
-                  <UsedCreatorNameRow>
-                    <UsedCreatorChip>
-                      <span className="icon">{usedCreator.icon}</span>
-                      <span>{usedCreator.name}</span>
-                      <span className="category">{usedCreator.category}</span>
-                    </UsedCreatorChip>
-                  </UsedCreatorNameRow>
-                </UsedCreatorRow>
-              </ProductContent>
-            </ProductTopRow>
+                  <ProductRatingRow>
+                    ⭐ {ratingInfo.average} <span className="bar">|</span>
+                    리뷰 {ratingInfo.count.toLocaleString()}
+                  </ProductRatingRow>
 
-            <ProductBottomRow>
-              <DetailButton>제품 상세보기</DetailButton>
-            </ProductBottomRow>
-          </ProductCard>
-        ))}
+                  <UsedCreatorRow>
+                    <UsedCreatorLabel>
+                      <span>📷</span>
+                      <span>사용한 크리에이터</span>
+                    </UsedCreatorLabel>
+
+                    <UsedCreatorNameRow>
+                      <UsedCreatorChip>
+                        <span className="icon">{creator?.icon || '👤'}</span>
+                        <span>{creator?.name || '알 수 없음'}</span>
+                        <span className="category">
+                          {Array.isArray(creator?.category)
+                            ? creator.category.join(', ')
+                            : creator?.category}
+                        </span>
+                      </UsedCreatorChip>
+                    </UsedCreatorNameRow>
+                  </UsedCreatorRow>
+                </ProductContent>
+              </ProductTopRow>
+
+              <ProductBottomRow>
+                <DetailButton>제품 상세보기</DetailButton>
+              </ProductBottomRow>
+            </ProductCard>
+          );
+        })}
       </ProductList>
     </>
   );
