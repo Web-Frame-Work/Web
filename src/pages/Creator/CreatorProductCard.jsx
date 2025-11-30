@@ -2,22 +2,43 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as S from './styles/CreatorDetailPage.style';
 
+// ✅ [수정 1] 리뷰 데이터 가져오기
+import { productsReviews } from '../../mocks/setListData';
+
 const CreatorProductCard = ({ product }) => {
   const navigate = useNavigate();
 
+  // ✅ [수정 2] 현재 상품(product.id)에 달린 리뷰만 필터링
+  const matchingReviews = productsReviews.filter(review => review.productId === product.id);
+  
+  // ✅ [수정 3] 리뷰 개수
+  const reviewCount = matchingReviews.length;
+
+  // ✅ [수정 4] 평점 평균 계산 (리뷰가 없으면 0.0)
+  const averageRating = reviewCount > 0
+    ? (matchingReviews.reduce((sum, review) => sum + review.rating, 0) / reviewCount).toFixed(1)
+    : "0.0";
+
   return (
     <S.ProductCard>
-      <S.ProductImageWrapper>
+      <S.ProductImageWrapper onClick={() => navigate(`/detail/${product.id}`)} style={{ cursor: 'pointer' }}>
         <S.ProductImage src={product.image} alt={product.name} />
       </S.ProductImageWrapper>
 
       <S.ProductInfo>
         <S.ProductName>{product.name}</S.ProductName>
-        <S.ProductPrice>₩{product.price.toLocaleString()}</S.ProductPrice>
+        
+        <S.ProductPrice>
+            {product.discount > 0 && (
+                <span style={{ color: '#ff4d4f', marginRight: '8px' }}>{product.discount}%</span>
+            )}
+            {product.price.toLocaleString()}원
+        </S.ProductPrice>
+        
+        {/* ✅ [수정 5] 계산된 실제 데이터 반영 */}
         <S.RatingBox>
-          {/* 별점랑 댓글수는 임시값으로 표시 */}
-          <span className="star">★ 4.8</span>
-          <span className="count">(1,234)</span>
+          <span className="star">★ {averageRating}</span>
+          <span className="count">({reviewCount.toLocaleString()})</span>
         </S.RatingBox>
 
         <S.DetailButton onClick={() => navigate(`/detail/${product.id}`)}>

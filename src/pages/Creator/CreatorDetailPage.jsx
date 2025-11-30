@@ -3,10 +3,9 @@ import { useParams, useNavigate } from 'react-router-dom';
 import * as S from './styles/CreatorDetailPage.style';
 
 // 데이터 임포트
-import { dummyCreators, dummyProducts, creatorRecommendedProducts } from '../../mocks/setListData';
+import { creators, products, creatorRecommendedProducts } from '../../mocks/setListData';
 
-// 컴포넌트 임포트 (같은 폴더에 있으므로 ./ 경로 사용)
-import SearchBar from '../Common/SearchBar'; 
+// SearchBar는 제거된 상태 유지
 import CreatorBanner from './CreatorBanner';
 import CreatorProductList from './CreatorProductList';
 
@@ -14,44 +13,37 @@ const CreatorDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   
-  // 상태 관리
   const [creator, setCreator] = useState(null);
-  const [products, setProducts] = useState([]);
+  const [creatorProducts, setCreatorProducts] = useState([]);
 
-  // 데이터 로직
   useEffect(() => {
     const currentId = Number(id);
     
-    const foundCreator = dummyCreators.find(c => c.id === currentId);
+    // 1. 크리에이터 정보 찾기
+    const foundCreator = creators.find(c => c.id === currentId);
     setCreator(foundCreator);
 
+    // 2. 추천 상품 찾기
     const productIds = creatorRecommendedProducts[currentId] || [];
-    const relatedProducts = dummyProducts.filter(p => productIds.includes(p.id));
-    setProducts(relatedProducts);
+    const relatedProducts = products.filter(p => productIds.includes(p.id));
+    setCreatorProducts(relatedProducts);
 
   }, [id]);
-
-  const handleSearch = (query) => {
-    console.log("검색어:", query);
-  };
 
   if (!creator) return <div>Loading...</div>;
 
   return (
     <S.Container>
-      {/* 1. 검색창 */}
-      <SearchBar onSearch={handleSearch} />
-
-      {/* 2. 뒤로가기 */}
-      <S.HeaderNav onClick={() => navigate(-1)}>
+      {/* ✅ [수정] 클릭 시 '/search' 경로로 이동하도록 변경 
+        (http://localhost:5174/search 로 이동)
+      */}
+      <S.HeaderNav onClick={() => navigate('/search')}>
         ← 목록으로
       </S.HeaderNav>
 
-      {/* 3. 배너 영역 (분리된 컴포넌트) */}
       <CreatorBanner creator={creator} />
 
-      {/* 4. 상품 리스트 영역 (분리된 컴포넌트) */}
-      <CreatorProductList products={products} />
+      <CreatorProductList products={creatorProducts} />
       
     </S.Container>
   );

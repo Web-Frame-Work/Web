@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  /* ✨ 1500px -> 1280px로 변경 (안정적인 데스크탑 너비) */
+  /* ✨ 요청하신 대로 1280px로 설정 (안정적인 데스크탑 비율) */
   max-width: 1280px; 
   margin: 0 auto;
   padding-bottom: 80px;
   font-family: 'Pretendard', sans-serif;
-  /* 양옆 여백도 살짝 줄임 */
   padding-left: 40px;
   padding-right: 40px;
   box-sizing: border-box;
@@ -68,15 +67,33 @@ export const ContentWrapper = styled.div`
 export const SectionTitle = styled.h2`
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   color: #111;
+  /* 섹션 구분을 위해 밑줄 추가 (선택 사항) */
+  border-bottom: 2px solid #111;
+  padding-bottom: 15px;
+`;
+
+/* ✨ [필수] 카테고리별 분류를 위한 컨테이너 스타일 추가 */
+export const CategorySection = styled.div`
+  margin-bottom: 60px; 
+`;
+
+/* ✨ [필수] 카테고리 제목 스타일 추가 */
+export const CategoryTitle = styled.h3`
+  font-size: 19px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 `;
 
 export const ProductGrid = styled.div`
   display: grid;
-  /* 3개 배치 유지 */
+  /* ✨ 3개 배치 (카드가 넓게 보임) */
   grid-template-columns: repeat(3, 1fr); 
-  /* 폭이 줄었으므로 간격도 40px -> 30px로 조정 */
+  /* 폭이 줄었으므로 간격 30px */
   gap: 30px; 
 
   @media (max-width: 1200px) {
@@ -102,16 +119,17 @@ export const ProductCard = styled.div`
 
 export const ProductImageWrapper = styled.div`
   width: 100%;
-  /* ✨ 카드가 좁아진 만큼 높이도 300px로 조정 (비율 유지) */
+  /* ✨ 이미지 영역 높이 300px 유지 */
   height: 300px; 
   background-color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer; /* 클릭 가능하다는 표시 */
 `;
 
 export const ProductImage = styled.img`
-  /* 이미지 크기도 200px로 조정 */
+  /* 이미지 크기 200px 유지 */
   width: 200px;
   height: 200px;
   object-fit: contain;
