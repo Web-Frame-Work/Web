@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  /* ✨ 요청하신 대로 1280px로 설정 (안정적인 데스크탑 비율) */
   max-width: 1280px; 
   margin: 0 auto;
   padding-bottom: 80px;
@@ -74,12 +73,10 @@ export const SectionTitle = styled.h2`
   padding-bottom: 15px;
 `;
 
-/* ✨ [필수] 카테고리별 분류를 위한 컨테이너 스타일 추가 */
 export const CategorySection = styled.div`
   margin-bottom: 60px; 
 `;
 
-/* ✨ [필수] 카테고리 제목 스타일 추가 */
 export const CategoryTitle = styled.h3`
   font-size: 19px;
   font-weight: 700;
@@ -119,17 +116,15 @@ export const ProductCard = styled.div`
 
 export const ProductImageWrapper = styled.div`
   width: 100%;
-  /* ✨ 이미지 영역 높이 300px 유지 */
   height: 300px; 
   background-color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; /* 클릭 가능하다는 표시 */
+  cursor: pointer; 
 `;
 
 export const ProductImage = styled.img`
-  /* 이미지 크기 200px 유지 */
   width: 200px;
   height: 200px;
   object-fit: contain;

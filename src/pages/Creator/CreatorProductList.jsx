@@ -4,7 +4,7 @@ import CreatorProductCard from './CreatorProductCard';
 
 const CreatorProductList = ({ products }) => {
   
-  // ✨ 제품들을 카테고리별로 묶는 로직
+  // 제품들을 카테고리별로 묶는 로직
   const groupedProducts = useMemo(() => {
     const groups = {};
     
@@ -20,7 +20,7 @@ const CreatorProductList = ({ products }) => {
     return groups;
   }, [products]);
 
-  // 카테고리 키값들 (예: ['뷰티', '테크'])
+  // 카테고리 키값들 
   const categories = Object.keys(groupedProducts);
 
   return (

@@ -34,9 +34,7 @@ const CreatorDetailPage = () => {
 
   return (
     <S.Container>
-      {/* ✅ [수정] 클릭 시 '/search' 경로로 이동하도록 변경 
-        (http://localhost:5174/search 로 이동)
-      */}
+      {/* (http://localhost:5174/search 로 이동) */}
       <S.HeaderNav onClick={() => navigate('/search')}>
         ← 목록으로
       </S.HeaderNav>
