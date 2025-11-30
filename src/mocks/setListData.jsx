@@ -1,156 +1,320 @@
-// src/mocks/setListData.jsx
+  // src/mocks/setListData.jsx
+
+  export const creators = [
+    {
+      "id": 1,
+      "name": "스완",
+      "category": "뷰티",
+      "image": "/assets/image/swan.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "480K",
+      "description": "메이크업과 뷰티 팁을 공유하는 인기 남자 뷰티 크리에이터" 
+    },
+    {
+      "id": 2,
+      "name": "깡스타일리스트",
+      "category": "패션",
+      "image": "/assets/image/kkang.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "1.2M",
+      "description": "트렌디한 패션 스타일링과 코디법을 소개하는 패션 크리에이터"
+    },
+    {
+      "id": 3,
+      "name": "티벳동생",
+      "category": ["뷰티", "헬스"],
+      "image": "/assets/image/tibet.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "460K",
+      "description": "건강한 라이프스타일과 뷰티 루틴을 공유하는 크리에이터"
+    },
+    {
+      "id": 4,
+      "name": "김계란",
+      "category": "헬스",
+      "image": "/assets/image/KimEgg.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "3.12M",
+      "description": "체형 교정과 운동 꿀팁을 알려주는 크리에이터."
+    },
+    {
+      "id": 5,
+      "name": "앨리스펑크",
+      "category": "패션",
+      "image": "/assets/image/Alice.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "680K",
+      "description": "옷 잘 입는 법 알려주는 현직 스타일리스트인 크리에이터."
+    },
+    {
+      "id": 6,
+      "name": "승우아빠",
+      "category": ["주방 기구","식품"],
+      "image": "/assets/image/swab85.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "1.62M",
+      "description": "세상의 모든 요리와 주방 기구 리뷰하는 크리에이터."
+    }
+  ]
+
+
+  export const products = [
+    {"id":101,"name":"[트루션] 센시톨로지 더마 크림 80ml","category":"뷰티","price":36000,"discount":43,"image":"/assets/image/101.png","link":"https://bgroom.co.kr/product/detail.html?product_no=631","creatorId":1},
+    {"id":102,"name":"[에스네이처] 아쿠아 오아시스 수분 젤크림 80ml","category":"뷰티","price":32000,"discount":38,"image":"/assets/image/102.png","link":"https://bgroom.co.kr/product/detail.html?product_no=29","creatorId":1},
+    {"id":103,"name":"[에스네이처] 아쿠아 라이스 클렌징오일 200ml","category":"뷰티","price":24000,"discount":30,"image":"/assets/image/103.png","link":"https://bgroom.co.kr/product/detail.html?product_no=85","creatorId":1},
+    {"id":104,"name":"[웰라쥬] 리얼 히알루로닉 100 토너 200ml","category":"뷰티","price":20000,"discount":33,"image":"/assets/image/104.png","link":"https://bgroom.co.kr/product/detail.html?product_no=285","creatorId":1},
+    {"id":105,"name":"[유이크] 레미디 마일드 선크림 50ml","category":"뷰티","price":27000,"discount":41,"image":"/assets/image/105.png","link":"https://bgroom.co.kr/product/detail.html?product_no=157","creatorId":1},
+    {"id":106,"name":"[이즈앤트리] 머그워트 카밍 클레이 마스크 대용량 200ml","category":"뷰티","price":38000,"discount":37,"image":"/assets/image/106.png","link":"https://bgroom.co.kr/product/detail.html?product_no=203","creatorId":1},
+
+    {"id":201,"name":"[노이어] 캐시미어 오버핏 더블 코드 블랙","category":"패션","price":425000,"discount":20,"image":"/assets/image/201.png","link":"https://kkst.kr/product/3905","creatorId":2},
+    {"id":202,"name":"[론트] 파인 코튼 가디건 블랙","category":"패션","price":114000,"discount":59,"image":"/assets/image/202.png","link":"https://kkst.kr/product/detail.html?product_no=99","creatorId":2},
+    {"id":203,"name":"[에드리엘로스] 스모키 피그먼트 롱 슬리브 3color","category":"패션","price":39000,"discount":28,"image":"/assets/image/203.png","link":"https://kkst.kr/product/detail.html?product_no=1340","creatorId":2},
+    {"id":204,"name":"[이코르] 골지 라운드 헨리넥 반팔 티셔츠 블랙","category":"패션","price":80000,"discount":60,"image":"/assets/image/204.png","link":"https://kkst.kr/product/detail.html?product_no=11701","creatorId":2},
+    {"id":205,"name":"[메르고] 노스트 와이드 치노 팬츠 베이지","category":"패션","price":49000,"discount":10,"image":"/assets/image/205.png","link":"https://kkst.kr/product/3583","creatorId":2},
+    {"id":206,"name":"[빅유니온] 커브드 데님 벨티드 팬츠 블랙","category":"패션","price":99000,"discount":40,"image":"/assets/image/206.png","link":"https://kkst.kr/product/detail.html?product_no=13424","creatorId":2},
+
+    {"id":301,"name":"[플로에] 프로틴업 쿠키 2종","category":"식품","price":19000,"discount":15,"image":"/assets/image/301.png","link":"https://ploe.co.kr/product/65","creatorId":3},
+    {"id":302,"name":"[플로에] 해피 그릭요거트 4종","category":"식품","price":25200,"discount":15,"image":"/assets/image/302.png","link":"https://ploe.co.kr/product/31","creatorId":3},
+    {"id":303,"name":"[이데아뉴트리션] 아이즈 프로틴 시리얼 200g","category":"식품","price":19000,"discount":16,"image":"/assets/image/303.png","link":"https://idea-nutrition.com/product/44","creatorId":3},
+    {"id":304,"name":"[라운드랩] 소나무 진정 시카 바디 미스트 150ml","category":"뷰티","price":23000,"discount":30,"image":"/assets/image/304.png","link":"https://brand.naver.com/roundlab/products/11819862369","creatorId":3},
+    {"id":305,"name":"[라운드랩] 소나무 진정 시카 바디 워시 400ml","category":"뷰티","price":21000,"discount":29,"image":"/assets/image/305.png","link":"https://brand.naver.com/roundlab/products/11819867767","creatorId":3},
+    {"id":306,"name":"[토리든] 밸런스풀 포맨 시카 프레쉬 올인원 200g","category":"뷰티","price":25000,"discount":20,"image":"/assets/image/306.png","link":"https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000228952","creatorId":3},
+
+    {"id":401,"name":"하이퍼볼트 2 Pro 마사지건","category":"헬스","price":499000,"discount":20,"image":"/assets/image/401.png","link":"https://hyperice.co.kr/old_Hypervolt/?idx=163","creatorId":4},
+    {"id":402,"name":"베르사 그립 프로","category":"헬스","price":115000,"discount":5,"image":"/assets/image/402.png","link":"https://www.undongs.com/shop/shopdetail.html?branduid=1127009&xcode=024&mcode=005&scode=&type=X&sort=manual&cur_code=024005&search=&GfDT=Zmd3UQ%3D%3D","creatorId":4},
+    {"id":403,"name":"SBD 리프팅 벨트","category":"헬스","price":399000,"discount":0,"image":"/assets/image/403.png","link":"https://sbdapparel.kr/product/sbd-%EB%A6%AC%EC%A1%B8%EB%B8%8C-10mm-%EB%A0%88%EB%B2%84-%EB%B2%A8%ED%8A%B8/353/category/25/display/1/","creatorId":4},
+    {"id":404,"name":"트리거포인트 그리드 폼롤러","category":"헬스","price":66700,"discount":28,"image":"/assets/image/404.png","link":"https://www.coupang.com/vp/products/7923296390?itemId=21774899964&vendorItemId=94107997361&src=1042503&spec=10304025&addtag=400&ctag=7923296390&lptag=7923296390-21774899964&itime=20251127175554&pageType=PRODUCT&pageValue=7923296390&wPcid=17634361969766645580404&wRef=www.google.com&wTime=20251127175554&redirect=landing&gclid=Cj0KCQiAiqDJBhCXARIsABk2kSn_s3mGhIgDlGKaKboXwrQK7uiQIPd0ot2nhuFG2xThY4zQSoo-z5UaAl2GEALw_wcB&mcid=78cdd209c96d4b5387353dfa3d474d6f&campaignid=22815108882&adgroupid=","creatorId":4},
+    {"id":405,"name":"나랑드 사이다 제로 1.5L (12개)","category":"식품","price":18900,"discount":30,"image":"/assets/image/405.png","link":"https://brand.naver.com/donga-otsuka/products/3351610935","creatorId":4},
+    {"id":406,"name":"XTEND BCAA 포도맛","category":"헬스","price":56910,"discount":46,"image":"/assets/image/406.png","link":"https://www.coupang.com/vp/products/71941255?itemId=4151034&vendorItemId=3226240818&pickType=COU_PICK&q=%EC%97%91%EC%8A%A4%ED%85%90%EB%93%9C&searchId=4cb61fcb154591&sourceType=search&itemsCount=36&searchRank=0&rank=0&traceId=mih7cmcc","creatorId":4},
+
+    {"id":501,"name":"COS 퀄팅 백","category":"패션","price":89000,"discount":0,"image":"/assets/image/501.png","link":"https://www.cos.com/ko-kr/women/view-all/product.quilted-mini-bag-ivory.0973537065.html?slitmCd=40A2167924","creatorId":5},
+    {"id":502,"name":"아디다스 삼바 OG 화이트","category":"패션","price":149000,"discount":46,"image":"/assets/image/502.png","link":"https://www.adidas.co.kr/samba?cm_mmc=AdieSEM_naver-_-alwayson-_-P_F_U_Samba-_-P_F_U_Samba__%EC%95%84%EB%94%94%EB%8B%A4%EC%8A%A4%EC%82%BC%EB%B0%94OG%ED%99%94%EC%9D%B4%ED%8A%B8-_-dv:eCom-_-cn:alwayson-_-pc:naver&cm_mmc1=KR&cm_mmc2=PPC-SB-CrossCategory-None-BMM-KR-APAC-eCom-Paid_Search&n_media=335738&n_query=%EC%95%84%EB%94%94%EB%8B%A4%EC%8A%A4%EC%82%BC%EB%B0%94OG%ED%99%94%EC%9D%B4%ED%8A%B8&n_rank=1&n_ad_group=grp-a001-01-000000026991474&n_ad=nad-a001-01-000000182392177&n_keyword_id=nkw-a001-01-000006565159579&n_keyword=%EC%95%84%EB%94%94%EB%8B%A4%EC%8A%A4%EC%82%BC%EB%B0%94OG%ED%99%94%EC%9D%B4%ED%8A%B8&n_campaign_type=1&n_ad_group_type=1&n_match=1&NaPm=ct%3Dmih7lk2b%7Cci%3DER56daa30c%2Dcb70%2D11f0%2Da0b1%2D4a1ffacb8473%7Ctr%3Dsa%7Chk%3D4fb092bc00e155a081766e9b9edbd8fa212a32fb%7Cnacn%3DYNoiBgg0hxUV","creatorId":5},
+    {"id":503,"name":"젠틀몬스터 랭 01 선글라스","category":"패션","price":269000,"discount":0,"image":"/assets/image/503.png","link":"https://www.gentlemonster.com/kr/ko/item/KS78I5HR7Z30/lady-lang-01","creatorId":5},
+    {"id":504,"name":"디젤 1DR 숄더백","category":"패션","price":940000,"discount":30,"image":"/assets/image/504.png","link":"https://kr.diesel.com/en/shoulder-bags/1dr-black/X08396P5126T8013.html?queryID=3212899a9bfa7f5e28aa1835a59148de","creatorId":5},
+    {"id":505,"name":"뉴발란스 530 스틸그레이","category":"패션","price":129000,"discount":0,"image":"/assets/image/505.png","link":"https://www.nbkorea.com/product/productDetail.action?styleCode=NBPDGS115W&colCode=10&cIdx=","creatorId":5},
+    {"id":506,"name":"마뗑킴 로고 티셔츠","category":"패션","price":98000,"discount":10,"image":"/assets/image/506.png","link":"https://matinkim.com/product/detail.html?product_no=8688&cate_no=27&display_group=1","creatorId":5},
+
+    {"id":601,"name":"바이타믹스 블렌더 프렙3 PREP3","category":"주방 기구","price":1155000,"discount":5,"image":"/assets/image/601.png","link":"https://smartstore.naver.com/vitamix/products/250725308","creatorId":6},
+    {"id":602,"name":"글로벌 나이프 G-2 (식도)","category":"주방 기구","price":108150,"discount":20,"image":"/assets/image/602.png","link":"https://www.popl.co.kr/shop/shopdetail.html?branduid=5618&srsltid=AfmBOooWwmT3yb2EuHRSTJ_s2jq3vudMJKPF3HruTwyXZsvas9YMiPNC","creatorId":6},
+    {"id":603,"name":"롯지 무쇠 팬 10인치","category":"주방 기구","price":54900,"discount":0,"image":"/assets/image/603.png","link":"https://www.coupang.com/vp/products/6597892765?itemId=14914224324&vendorItemId=73924099039&src=1042503&spec=10304025&addtag=400&ctag=6597892765&lptag=6597892765-14914224324&itime=20251129001501&pageType=PRODUCT&pageValue=6597892765&wPcid=17634361969766645580404&wRef=www.google.com&wTime=20251129001501&redirect=landing&gclid=CjwKCAiAraXJBhBJEiwAjz7MZc7E0Yl5OhOkB188HHI8TN2WNOUgp71xpPbFleSlvVEcbVje-9Jb5BoCTygQAvD_BwE&mcid=9a2cf951511e400fbab0214e75ff12aa&campaignid=22815108882&adgroupid=","creatorId":6},
+    {"id":604,"name":"아노바 수비드 머신 3.0","category":"주방 기구","price":336170,"discount":35,"image":"/assets/image/604.png","link":"https://anovaculinary.com/ko/products/anova-precision-cooker-3","creatorId":6},
+    {"id":605,"name":"마이크로플레인 제스터","category":"주방 기구","price":52000,"discount":50,"image":"/assets/image/605.png","link":"https://chef.so/product/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%94%8C%EB%A0%88%EC%9D%B8%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%A0%9C%EC%8A%A4%ED%84%B0-%EA%B0%95%ED%8C%90/1090/category/353/display/1/","creatorId":6},
+    {"id":606,"name":"에피큐리언 도마 (대)","category":"주방 기구","price":75000,"discount":0,"image":"/assets/image/606.png","link":"https://elcuizen.com/product/%EC%97%90%ED%94%BC%ED%81%90%EB%A6%AC%EC%96%B8-%EC%B9%98%EC%A6%88%EB%B3%B4%EB%93%9C-%EC%82%AC%EA%B0%81-%EB%82%B4%EC%B8%84%EB%9F%B4-made-in-usa/1896/category/106/display/1/","creatorId":6}
+  ]
+
+  export const creatorRecommendedProducts = {
+    1: [101, 102, 103, 104, 105, 106],
+    2: [201, 202, 203, 204, 205, 206],
+    3: [301, 302, 303, 304, 305, 306],
+    4: [401, 402, 403, 404, 405, 406],
+    5: [501, 502, 503, 504, 505, 506],
+    6: [601, 602, 603, 604, 605, 606]
+  };  
+
+
+  export const productsReviews = [
+    /* ===============================
+      크리에이터 1 - 스완 (productId 101~106)
+      =============================== */
+
+    { "productId": 101, "nickname": "뷰티덕후", "rating": 5, "comment": "촉촉하고 흡수 빠름!", "createdAt": "2024-11-21" },
+    { "productId": 101, "nickname": "익명", "rating": 4, "comment": "지복합성 피부에 잘 맞음.", "createdAt": "2024-11-19" },
+    { "productId": 101, "nickname": "코코아", "rating": 5, "comment": "재구매 의사 있음!", "createdAt": "2024-11-17" },
+
+    { "productId": 102, "nickname": "맑은하늘", "rating": 4, "comment": "발림성 좋고 은은한 향.", "createdAt": "2024-11-18" },
+    { "productId": 102, "nickname": "피부과가자", "rating": 5, "comment": "수분감 최고!", "createdAt": "2024-11-16" },
+    { "productId": 102, "nickname": "익명", "rating": 4, "comment": "가볍고 촉촉해서 데일리로 좋음.", "createdAt": "2024-11-15" },
+
+    { "productId": 103, "nickname": "로션광", "rating": 5, "comment": "메이크업도 잘 지워짐.", "createdAt": "2024-11-20" },
+    { "productId": 103, "nickname": "익명", "rating": 5, "comment": "유분기 적당하고 순함.", "createdAt": "2024-11-18" },
+    { "productId": 103, "nickname": "수부지", "rating": 4, "comment": "촉촉한데 번들거리지 않음.", "createdAt": "2024-11-17" },
+
+    { "productId": 104, "nickname": "향좋아", "rating": 4, "comment": "은은한 향 좋음.", "createdAt": "2024-11-21" },
+    { "productId": 104, "nickname": "익명", "rating": 5, "comment": "진정 효과 확실함!", "createdAt": "2024-11-19" },
+    { "productId": 104, "nickname": "스킨케어고수", "rating": 4, "comment": "가성비 괜찮음.", "createdAt": "2024-11-16" },
+
+    { "productId": 105, "nickname": "햇빛조심", "rating": 5, "comment": "백탁 없고 산뜻함.", "createdAt": "2024-11-20" },
+    { "productId": 105, "nickname": "여름이", "rating": 4, "comment": "촉촉하고 부담 없음!", "createdAt": "2024-11-17" },
+    { "productId": 105, "nickname": "익명", "rating": 5, "comment": "남자도 쓰기 좋음", "createdAt": "2024-11-15" },
+
+    { "productId": 106, "nickname": "지성피부", "rating": 5, "comment": "피부 진정 확실함.", "createdAt": "2024-11-19" },
+    { "productId": 106, "nickname": "민감녀", "rating": 4, "comment": "순하고 자극 없음.", "createdAt": "2024-11-16" },
+    { "productId": 106, "nickname": "익명", "rating": 5, "comment": "바르고나면 시원함!", "createdAt": "2024-11-14" },
 
 
 
-export const creators = [
-  {
-    "id": 1,
-    "name": "스완",
-    "category": "뷰티",
-    "image": "./assets/image/swan.png",
-    "platforms": ["YouTube", "Instagram"],
-    "followers": "480K",
-    "description": "메이크업과 뷰티 팁을 공유하는 인기 남자 뷰티 크리에이터" 
-  },
-  {
-    "id": 2,
-    "name": "깡스타일리스트",
-    "category": "패션",
-    "image": "./assets/image/kkang.png",
-    "platforms": ["YouTube", "Instagram"],
-    "followers": "1.2M",
-    "description": "트렌디한 패션 스타일링과 코디법을 소개하는 패션 크리에이터"
-  },
-  {
-    "id": 3,
-    "name": "티벳동생",
-    "category": ["뷰티", "헬스"],
-    "image": "./assets/image/tibet.png",
-    "platforms": ["YouTube", "Instagram"],
-    "followers": "460K",
-    "description": "건강한 라이프스타일과 뷰티 루틴을 공유하는 크리에이터"
-  }
-]
+    /* ===============================
+      크리에이터 2 - 깡스타일리스트 (productId 203~206)
+      =============================== */
+
+    { "productId": 203, "nickname": "옷잘알", "rating": 5, "comment": "핏이 너무 예쁨!", "createdAt": "2024-11-20" },
+    { "productId": 203, "nickname": "코디왕", "rating": 4, "comment": "색감 그대로 나옴.", "createdAt": "2024-11-18" },
+    { "productId": 203, "nickname": "익명", "rating": 5, "comment": "만족도 최고.", "createdAt": "2024-11-15" },
+
+    { "productId": 204, "nickname": "패션러버", "rating": 4, "comment": "질감 좋고 편함.", "createdAt": "2024-11-20" },
+    { "productId": 204, "nickname": "익명", "rating": 5, "comment": "여름에 입기 좋음!", "createdAt": "2024-11-19" },
+    { "productId": 204, "nickname": "코튼코튼", "rating": 4, "comment": "세탁해도 형태 유지됨.", "createdAt": "2024-11-16" },
+
+    { "productId": 205, "nickname": "슬랙스수집가", "rating": 5, "comment": "와이드 핏 완벽.", "createdAt": "2024-11-20" },
+    { "productId": 205, "nickname": "익명", "rating": 5, "comment": "가성비 진짜 좋음.", "createdAt": "2024-11-17" },
+    { "productId": 205, "nickname": "편한청바지", "rating": 4, "comment": "편하고 튼튼함.", "createdAt": "2024-11-15" },
+
+    { "productId": 206, "nickname": "데일리룩", "rating": 4, "comment": "핏 예쁨!", "createdAt": "2024-11-21" },
+    { "productId": 206, "nickname": "익명", "rating": 5, "comment": "두께감 적당함.", "createdAt": "2024-11-19" },
+    { "productId": 206, "nickname": "옷사쟈", "rating": 4, "comment": "색감 사진과 동일.", "createdAt": "2024-11-18" },
 
 
-export const products = [
-  {"id":101,"name":"[트루션] 센시톨로지 더마 크림 80ml","category":"뷰티","price":36000,"discount":43,"image":"./assets/image/101.png","link":"https://bgroom.co.kr/product/detail.html?product_no=631","creatorId":1},
-  {"id":102,"name":"[에스네이처] 아쿠아 오아시스 수분 젤크림 80ml","category":"뷰티","price":32000,"discount":38,"image":"./assets/image/102.png","link":"https://bgroom.co.kr/product/detail.html?product_no=29","creatorId":1},
-  {"id":103,"name":"[에스네이처] 아쿠아 라이스 클렌징오일 200ml","category":"뷰티","price":24000,"discount":30,"image":"./assets/image/103.png","link":"https://bgroom.co.kr/product/detail.html?product_no=85","creatorId":1},
-  {"id":104,"name":"[웰라쥬] 리얼 히알루로닉 100 토너 200ml","category":"뷰티","price":20000,"discount":33,"image":"./assets/image/104.png","link":"https://bgroom.co.kr/product/detail.html?product_no=285","creatorId":1},
-  {"id":105,"name":"[유이크] 레미디 마일드 선크림 50ml","category":"뷰티","price":27000,"discount":41,"image":"./assets/image/105.png","link":"https://bgroom.co.kr/product/detail.html?product_no=157","creatorId":1},
-  {"id":106,"name":"[이즈앤트리] 머그워트 카밍 클레이 마스크 대용량 200ml","category":"뷰티","price":38000,"discount":37,"image":"./assets/image/106.png","link":"https://bgroom.co.kr/product/detail.html?product_no=203","creatorId":1},
+    /* ===============================
+      크리에이터 3 - 티벳동생 (productId 301~306)
+      =============================== */
 
-  {"id":201,"name":"[노이어] 캐시미어 오버핏 더블 코드 블랙","category":"패션","price":425000,"discount":20,"image":"./assets/image/201.png","link":"https://kkst.kr/product/3905","creatorId":2},
-  {"id":202,"name":"[론트] 파인 코튼 가디건 블랙","category":"패션","price":114000,"discount":59,"image":"./assets/image/202.png","link":"https://kkst.kr/product/detail.html?product_no=99","creatorId":2},
-  {"id":203,"name":"[에드리엘로스] 스모키 피그먼트 롱 슬리브 3color","category":"패션","price":39000,"discount":28,"image":"./assets/image/203.png","link":"https://kkst.kr/product/detail.html?product_no=1340","creatorId":2},
-  {"id":204,"name":"[이코르] 골지 라운드 헨리넥 반팔 티셔츠 블랙","category":"패션","price":80000,"discount":60,"image":"./assets/image/204.png","link":"https://kkst.kr/product/detail.html?product_no=11701","creatorId":2},
-  {"id":205,"name":"[메르고] 노스트 와이드 치노 팬츠 베이지","category":"패션","price":49000,"discount":10,"image":"./assets/image/205.png","link":"https://kkst.kr/product/3583","creatorId":2},
-  {"id":206,"name":"[빅유니온] 커브드 데님 벨티드 팬츠 블랙","category":"패션","price":99000,"discount":40,"image":"./assets/image/206.png","link":"https://kkst.kr/product/detail.html?product_no=13424","creatorId":2},
+    { "productId": 301, "nickname": "헬스덕후", "rating": 5, "comment": "단백질 간식으로 최고!", "createdAt": "2024-11-20" },
+    { "productId": 301, "nickname": "익명", "rating": 4, "comment": "맛있고 부담 없음.", "createdAt": "2024-11-18" },
+    { "productId": 301, "nickname": "다이어터", "rating": 5, "comment": "식사 대용으로 딱.", "createdAt": "2024-11-17" },
 
-  {"id":301,"name":"[플로에] 프로틴업 쿠키 2종","category":"헬스","price":19000,"discount":15,"image":"./assets/image/301.png","link":"https://ploe.co.kr/product/65","creatorId":3},
-  {"id":302,"name":"[플로에] 해피 그릭요거트 4종","category":"헬스","price":25200,"discount":15,"image":"./assets/image/302.png","link":"https://ploe.co.kr/product/31","creatorId":3},
-  {"id":303,"name":"[이데아뉴트리션] 아이즈 프로틴 시리얼 200g","category":"뷰티","price":19000,"discount":16,"image":"./assets/image/303.png","link":"https://idea-nutrition.com/product/44","creatorId":3},
-  {"id":304,"name":"[라운드랩] 소나무 진정 시카 바디 미스트 150ml","category":"뷰티","price":23000,"discount":30,"image":"./assets/image/304.png","link":"https://brand.naver.com/roundlab/products/11819862369","creatorId":3},
-  {"id":305,"name":"[라운드랩] 소나무 진정 시카 바디 워시 400ml","category":"뷰티","price":21000,"discount":29,"image":"./assets/image/305.png","link":"https://brand.naver.com/roundlab/products/11819867767","creatorId":3},
-  {"id":306,"name":"[토리든] 밸런스풀 포맨 시카 프레쉬 올인원 200g","category":"뷰티","price":25000,"discount":20,"image":"./assets/image/306.png","link":"https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000228952","creatorId":3}
+    { "productId": 302, "nickname": "요거트매니아", "rating": 5, "comment": "진짜 꾸덕함!", "createdAt": "2024-11-20" },
+    { "productId": 302, "nickname": "익명", "rating": 4, "comment": "가격대비 만족.", "createdAt": "2024-11-18" },
+    { "productId": 302, "nickname": "건강맨", "rating": 4, "comment": "매일 먹기 좋음.", "createdAt": "2024-11-16" },
 
-]
+    { "productId": 303, "nickname": "프로틴러버", "rating": 5, "comment": "바삭하고 맛있음.", "createdAt": "2024-11-21" },
+    { "productId": 303, "nickname": "익명", "rating": 4, "comment": "우유랑 먹으면 최고.", "createdAt": "2024-11-19" },
+    { "productId": 303, "nickname": "헬창", "rating": 5, "comment": "단백질 함량 굿!", "createdAt": "2024-11-17" },
 
-export const creatorRecommendedProducts = {
-  1: [101, 102, 103, 104, 105, 106],
-	2: [201, 202, 203, 204, 205, 206],
-	3: [301, 302, 303, 304, 305, 306]
-};
+    { "productId": 304, "nickname": "스킨케어좋아", "rating": 4, "comment": "향 좋고 시원함.", "createdAt": "2024-11-18" },
+    { "productId": 304, "nickname": "익명", "rating": 5, "comment": "바디 미스트로 딱!", "createdAt": "2024-11-16" },
+    { "productId": 304, "nickname": "몸관리중", "rating": 4, "comment": "촉촉함 오래감.", "createdAt": "2024-11-14" },
 
+    { "productId": 305, "nickname": "피부관리남", "rating": 5, "comment": "향기 좋고 지속력 좋음.", "createdAt": "2024-11-20" },
+    { "productId": 305, "nickname": "익명", "rating": 4, "comment": "샤워할 때 편함.", "createdAt": "2024-11-17" },
+    { "productId": 305, "nickname": "가성비러버", "rating": 5, "comment": "가성비 최고.", "createdAt": "2024-11-15" },
 
-export const productsReviews = [
-  /* ===============================
-     크리에이터 1 - 스완 (productId 101~106)
-     =============================== */
+    { "productId": 306, "nickname": "민감피부", "rating": 4, "comment": "순하고 쿨링감 있음.", "createdAt": "2024-11-21" },
+    { "productId": 306, "nickname": "익명", "rating": 5, "comment": "포맨 제품이라 그런지 향도 좋음.", "createdAt": "2024-11-19" },
+    { "productId": 306, "nickname": "포맨유저", "rating": 4, "comment": "흡수 빠르고 끈적임 없음.", "createdAt": "2024-11-17" },
 
-  { "productId": 101, "nickname": "뷰티덕후", "rating": 5, "comment": "촉촉하고 흡수 빠름!", "createdAt": "2024-11-21" },
-  { "productId": 101, "nickname": "익명", "rating": 4, "comment": "지복합성 피부에 잘 맞음.", "createdAt": "2024-11-19" },
-  { "productId": 101, "nickname": "코코아", "rating": 5, "comment": "재구매 의사 있음!", "createdAt": "2024-11-17" },
+    /* ===============================
+      크리에이터 4 - 김계란 (productId 401~406)
+      =============================== */
+    { "productId": 401, "nickname": "득근가즈아", "rating": 5, "comment": "운동 끝나고 필수템. 강력 추천!", "createdAt": "2024-11-01" },
+    { "productId": 401, "nickname": "3대500꿈나무", "rating": 5, "comment": "비싼 값 합니다. 아주 시원해요.", "createdAt": "2024-10-25" },
+    { "productId": 401, "nickname": "종이인형", "rating": 3, "comment": "한 손으로 들고 하기엔 팔 아파요.", "createdAt": "2024-10-20" },
+    { "productId": 401, "nickname": "새벽운동러", "rating": 4, "comment": "생각보다 소리가 좀 큽니다.", "createdAt": "2024-10-15" },
+    { "productId": 401, "nickname": "효녀심청", "rating": 5, "comment": "부모님 사드렸는데 매일 쓰십니다.", "createdAt": "2024-10-10" },
 
-  { "productId": 102, "nickname": "맑은하늘", "rating": 4, "comment": "발림성 좋고 은은한 향.", "createdAt": "2024-11-18" },
-  { "productId": 102, "nickname": "피부과가자", "rating": 5, "comment": "수분감 최고!", "createdAt": "2024-11-16" },
-  { "productId": 102, "nickname": "익명", "rating": 4, "comment": "가볍고 촉촉해서 데일리로 좋음.", "createdAt": "2024-11-15" },
+    { "productId": 402, "nickname": "등신이되고파", "rating": 5, "comment": "등 자극이 완전히 달라집니다.", "createdAt": "2024-11-10" },
+    { "productId": 402, "nickname": "땀샘폭발", "rating": 4, "comment": "땀 많이 나면 살짝 미끄러워요.", "createdAt": "2024-11-05" },
+    { "productId": 402, "nickname": "장비만프로", "rating": 5, "comment": "1년 넘게 썼는데 멀쩡합니다.", "createdAt": "2024-11-01" },
+    { "productId": 402, "nickname": "가성비따짐", "rating": 3, "comment": "스트랩 치고 너무 비싼 감이...", "createdAt": "2024-10-28" },
+    { "productId": 402, "nickname": "헬스장고인물", "rating": 5, "comment": "헬스장은 장비빨이죠.", "createdAt": "2024-10-20" },
 
-  { "productId": 103, "nickname": "로션광", "rating": 5, "comment": "메이크업도 잘 지워짐.", "createdAt": "2024-11-20" },
-  { "productId": 103, "nickname": "익명", "rating": 5, "comment": "유분기 적당하고 순함.", "createdAt": "2024-11-18" },
-  { "productId": 103, "nickname": "수부지", "rating": 4, "comment": "촉촉한데 번들거리지 않음.", "createdAt": "2024-11-17" },
+    { "productId": 403, "nickname": "스쿼트장인", "rating": 5, "comment": "복압 잡는 건 SBD가 최고존엄.", "createdAt": "2024-09-30" },
+    { "productId": 403, "nickname": "갈비뼈아파요", "rating": 3, "comment": "처음 찰 때 멍들었어요 ㅠㅠ", "createdAt": "2024-09-15" },
+    { "productId": 403, "nickname": "허리디스크조심", "rating": 5, "comment": "허리 보호되는 느낌이 확실합니다.", "createdAt": "2024-09-10" },
+    { "productId": 403, "nickname": "사이즈미스", "rating": 4, "comment": "사이즈 표 잘 보고 사세요.", "createdAt": "2024-09-05" },
+    { "productId": 403, "nickname": "중량충", "rating": 5, "comment": "스쿼트 20kg 늘었습니다.", "createdAt": "2024-09-01" },
 
-  { "productId": 104, "nickname": "향좋아", "rating": 4, "comment": "은은한 향 좋음.", "createdAt": "2024-11-21" },
-  { "productId": 104, "nickname": "익명", "rating": 5, "comment": "진정 효과 확실함!", "createdAt": "2024-11-19" },
-  { "productId": 104, "nickname": "스킨케어고수", "rating": 4, "comment": "가성비 괜찮음.", "createdAt": "2024-11-16" },
+    { "productId": 404, "nickname": "고통을즐기는자", "rating": 5, "comment": "딱딱해서 처음엔 아픈데 풀리면 천국.", "createdAt": "2024-10-12" },
+    { "productId": 404, "nickname": "오래쓰는물건", "rating": 5, "comment": "안에 플라스틱이라 안 찌그러져요.", "createdAt": "2024-10-10" },
+    { "productId": 404, "nickname": "말랑이가좋아", "rating": 3, "comment": "초보자는 부드러운 거 먼저 쓰세요.", "createdAt": "2024-10-08" },
+    { "productId": 404, "nickname": "홈트매니아", "rating": 5, "comment": "매일 자기 전에 합니다.", "createdAt": "2024-10-05" },
+    { "productId": 404, "nickname": "키큰전봇대", "rating": 4, "comment": "조금 더 길었으면 좋겠어요.", "createdAt": "2024-10-01" },
 
-  { "productId": 105, "nickname": "햇빛조심", "rating": 5, "comment": "백탁 없고 산뜻함.", "createdAt": "2024-11-20" },
-  { "productId": 105, "nickname": "여름이", "rating": 4, "comment": "촉촉하고 부담 없음!", "createdAt": "2024-11-17" },
-  { "productId": 105, "nickname": "익명", "rating": 5, "comment": "남자도 쓰기 좋음", "createdAt": "2024-11-15" },
+    { "productId": 405, "nickname": "제로만마심", "rating": 5, "comment": "제로 칼로리 중에 가성비 원탑.", "createdAt": "2024-11-20" },
+    { "productId": 405, "nickname": "목따가워", "rating": 5, "comment": "탄산이 강해서 좋아요.", "createdAt": "2024-11-18" },
+    { "productId": 405, "nickname": "택배기사님", "rating": 3, "comment": "터져서 와서 교환받음.", "createdAt": "2024-11-15" },
+    { "productId": 405, "nickname": "슈가보이", "rating": 4, "comment": "깔끔한데 단맛은 좀 적음.", "createdAt": "2024-11-10" },
+    { "productId": 405, "nickname": "창고대방출", "rating": 5, "comment": "냉장고에 없으면 불안함.", "createdAt": "2024-11-05" },
 
-  { "productId": 106, "nickname": "지성피부", "rating": 5, "comment": "피부 진정 확실함.", "createdAt": "2024-11-19" },
-  { "productId": 106, "nickname": "민감녀", "rating": 4, "comment": "순하고 자극 없음.", "createdAt": "2024-11-16" },
-  { "productId": 106, "nickname": "익명", "rating": 5, "comment": "바르고나면 시원함!", "createdAt": "2024-11-14" },
+    { "productId": 406, "nickname": "보라돌이", "rating": 5, "comment": "그냥 포도주스입니다. 너무 맛있음.", "createdAt": "2024-10-30" },
+    { "productId": 406, "nickname": "깔끔쟁이", "rating": 3, "comment": "스쿱 찾다가 손에 다 묻음.", "createdAt": "2024-10-28" },
+    { "productId": 406, "nickname": "체력방전", "rating": 4, "comment": "마시면 덜 지치는 느낌.", "createdAt": "2024-10-25" },
+    { "productId": 406, "nickname": "단거싫어", "rating": 4, "comment": "물을 많이 타야 딱 맞음.", "createdAt": "2024-10-20" },
+    { "productId": 406, "nickname": "내돈내산", "rating": 5, "comment": "벌써 3통째입니다.", "createdAt": "2024-10-15" },
 
+    /* ===============================
+      크리에이터 5 - 앨리스펑크 (productId 501~506)
+      =============================== */
+    { "productId": 501, "nickname": "몽글몽글", "rating": 5, "comment": "몽글몽글 너무 귀여워요.", "createdAt": "2024-11-15" },
+    { "productId": 501, "nickname": "보부상", "rating": 5, "comment": "보기보다 진짜 많이 들어감.", "createdAt": "2024-11-12" },
+    { "productId": 501, "nickname": "흔한건싫어", "rating": 3, "comment": "길 가다 똑같은 가방 3명 마주침.", "createdAt": "2024-11-10" },
+    { "productId": 501, "nickname": "깔별로쟁임", "rating": 5, "comment": "어떤 옷에도 잘 어울려요.", "createdAt": "2024-11-08" },
+    { "productId": 501, "nickname": "품절대란", "rating": 4, "comment": "겨우 구했네요.", "createdAt": "2024-11-01" },
 
+    { "productId": 502, "nickname": "출근룩", "rating": 5, "comment": "매일 신는 신발.", "createdAt": "2024-10-20" },
+    { "productId": 502, "nickname": "왕발볼러", "rating": 3, "comment": "칼발 아니면 사이즈 업 필수.", "createdAt": "2024-10-18" },
+    { "productId": 502, "nickname": "쿠션감중요", "rating": 4, "comment": "바닥이 좀 딱딱해요.", "createdAt": "2024-10-15" },
+    { "productId": 502, "nickname": "패션피플", "rating": 5, "comment": "슬랙스, 청바지 다 잘 어울림.", "createdAt": "2024-10-10" },
+    { "productId": 502, "nickname": "예쁜게죄", "rating": 5, "comment": "그냥 예뻐서 용서됨.", "createdAt": "2024-10-05" },
 
-  /* ===============================
-     크리에이터 2 - 깡스타일리스트 (productId 203~206)
-     =============================== */
+    { "productId": 503, "nickname": "힙스터wannabe", "rating": 5, "comment": "쓰는 순간 힙해짐.", "createdAt": "2024-09-30" },
+    { "productId": 503, "nickname": "콧대낮음", "rating": 4, "comment": "약간 무거운 감이 있음.", "createdAt": "2024-09-28" },
+    { "productId": 503, "nickname": "얼큰이", "rating": 5, "comment": "동양인 얼굴형에 딱 맞아요.", "createdAt": "2024-09-25" },
+    { "productId": 503, "nickname": "텅장주의보", "rating": 3, "comment": "선글라스 치곤 좀 비쌈.", "createdAt": "2024-09-20" },
+    { "productId": 503, "nickname": "센스만점선물", "rating": 5, "comment": "포장이 고급스러워서 선물용으로 좋음.", "createdAt": "2024-09-15" },
 
-  { "productId": 203, "nickname": "옷잘알", "rating": 5, "comment": "핏이 너무 예쁨!", "createdAt": "2024-11-20" },
-  { "productId": 203, "nickname": "코디왕", "rating": 4, "comment": "색감 그대로 나옴.", "createdAt": "2024-11-18" },
-  { "productId": 203, "nickname": "익명", "rating": 5, "comment": "만족도 최고.", "createdAt": "2024-11-15" },
+    { "productId": 504, "nickname": "로고가다했다", "rating": 5, "comment": "D 로고가 다 했다.", "createdAt": "2024-11-05" },
+    { "productId": 504, "nickname": "미니백러버", "rating": 3, "comment": "핸드폰 넣으면 꽉 참.", "createdAt": "2024-11-01" },
+    { "productId": 504, "nickname": "숄더백성애자", "rating": 4, "comment": "숄더로 메면 딱 예쁜 길이.", "createdAt": "2024-10-28" },
+    { "productId": 504, "nickname": "물건막쓰는애", "rating": 4, "comment": "가죽이 기스에 좀 약해요.", "createdAt": "2024-10-25" },
+    { "productId": 504, "nickname": "포인트룩", "rating": 5, "comment": "룩의 포인트로 최고.", "createdAt": "2024-10-20" },
 
-  { "productId": 204, "nickname": "패션러버", "rating": 4, "comment": "질감 좋고 편함.", "createdAt": "2024-11-20" },
-  { "productId": 204, "nickname": "익명", "rating": 5, "comment": "여름에 입기 좋음!", "createdAt": "2024-11-19" },
-  { "productId": 204, "nickname": "코튼코튼", "rating": 4, "comment": "세탁해도 형태 유지됨.", "createdAt": "2024-11-16" },
+    { "productId": 505, "nickname": "구름위산책", "rating": 5, "comment": "구름 위를 걷는 느낌.", "createdAt": "2024-10-15" },
+    { "productId": 505, "nickname": "발에땀나요", "rating": 5, "comment": "바람 숭숭 들어와서 시원함.", "createdAt": "2024-10-12" },
+    { "productId": 505, "nickname": "수족냉증", "rating": 3, "comment": "겨울엔 발 시려워서 못 신음.", "createdAt": "2024-10-10" },
+    { "productId": 505, "nickname": "갓성비", "rating": 5, "comment": "이 가격에 이 착화감이면 최고.", "createdAt": "2024-10-08" },
+    { "productId": 505, "nickname": "발볼부자", "rating": 4, "comment": "살짝 크게 나온 듯.", "createdAt": "2024-10-05" },
 
-  { "productId": 205, "nickname": "슬랙스수집가", "rating": 5, "comment": "와이드 핏 완벽.", "createdAt": "2024-11-20" },
-  { "productId": 205, "nickname": "익명", "rating": 5, "comment": "가성비 진짜 좋음.", "createdAt": "2024-11-17" },
-  { "productId": 205, "nickname": "편한청바지", "rating": 4, "comment": "편하고 튼튼함.", "createdAt": "2024-11-15" },
+    { "productId": 506, "nickname": "심플이즈베스트", "rating": 5, "comment": "로고가 심플해서 예뻐요.", "createdAt": "2024-09-20" },
+    { "productId": 506, "nickname": "이너웨어필수", "rating": 3, "comment": "면이 얇아서 비침이 좀 있음.", "createdAt": "2024-09-18" },
+    { "productId": 506, "nickname": "세탁기금지", "rating": 4, "comment": "세탁기 돌리면 목 좀 늘어남.", "createdAt": "2024-09-15" },
+    { "productId": 506, "nickname": "박시핏", "rating": 5, "comment": "오버핏이라 편하게 입기 좋음.", "createdAt": "2024-09-10" },
+    { "productId": 506, "nickname": "총알배송", "rating": 5, "comment": "하루 만에 왔어요.", "createdAt": "2024-09-05" },
 
-  { "productId": 206, "nickname": "데일리룩", "rating": 4, "comment": "핏 예쁨!", "createdAt": "2024-11-21" },
-  { "productId": 206, "nickname": "익명", "rating": 5, "comment": "두께감 적당함.", "createdAt": "2024-11-19" },
-  { "productId": 206, "nickname": "옷사쟈", "rating": 4, "comment": "색감 사진과 동일.", "createdAt": "2024-11-18" },
+    /* ===============================
+      크리에이터 6 - 승우아빠 (productId 601~606)
+      =============================== */
+    { "productId": 601, "nickname": "요리는장비빨", "rating": 5, "comment": "믹서기의 에르메스 인정.", "createdAt": "2024-11-22" },
+    { "productId": 601, "nickname": "층간소음유발", "rating": 3, "comment": "비행기 이륙하는 소리 남.", "createdAt": "2024-11-20" },
+    { "productId": 601, "nickname": "설거지귀찮아", "rating": 5, "comment": "물 넣고 돌리면 세척 끝. 편함.", "createdAt": "2024-11-18" },
+    { "productId": 601, "nickname": "아침엔스프", "rating": 5, "comment": "따뜻한 스프도 만들어져서 신기함.", "createdAt": "2024-11-15" },
+    { "productId": 601, "nickname": "할부인생", "rating": 4, "comment": "할부 노예가 되었습니다.", "createdAt": "2024-11-10" },
 
+    { "productId": 602, "nickname": "무림고수", "rating": 5, "comment": "손 베일 뻔했습니다. 조심하세요.", "createdAt": "2024-10-30" },
+    { "productId": 602, "nickname": "주방인테리어", "rating": 5, "comment": "올스텐이라 위생적이고 예쁨.", "createdAt": "2024-10-28" },
+    { "productId": 602, "nickname": "왕손이", "rating": 4, "comment": "손잡이가 얇아서 손 큰 사람은 불편할 수도.", "createdAt": "2024-10-25" },
+    { "productId": 602, "nickname": "칼가는노인", "rating": 4, "comment": "전용 샤프너 같이 사는 게 좋음.", "createdAt": "2024-10-20" },
+    { "productId": 602, "nickname": "손목지킴이", "rating": 5, "comment": "무겁지 않아서 손목 안 아파요.", "createdAt": "2024-10-15" },
 
-  /* ===============================
-     크리에이터 3 - 티벳동생 (productId 301~306)
-     =============================== */
+    { "productId": 603, "nickname": "고기테리언", "rating": 5, "comment": "고기 맛이 달라집니다. 마이야르 대박.", "createdAt": "2024-10-05" },
+    { "productId": 603, "nickname": "살림은장비빨", "rating": 3, "comment": "시즈닝 관리가 너무 귀찮아요.", "createdAt": "2024-10-01" },
+    { "productId": 603, "nickname": "천하장사", "rating": 3, "comment": "한 손으로 못 듭니다. 흉기 수준.", "createdAt": "2024-09-28" },
+    { "productId": 603, "nickname": "평생쓸그릇", "rating": 5, "comment": "평생 쓰는 팬인데 이 가격이면 혜자.", "createdAt": "2024-09-25" },
+    { "productId": 603, "nickname": "캠핑가고싶다", "rating": 5, "comment": "그리들 대신 들고 다닙니다.", "createdAt": "2024-09-20" },
 
-  { "productId": 301, "nickname": "헬스덕후", "rating": 5, "comment": "단백질 간식으로 최고!", "createdAt": "2024-11-20" },
-  { "productId": 301, "nickname": "익명", "rating": 4, "comment": "맛있고 부담 없음.", "createdAt": "2024-11-18" },
-  { "productId": 301, "nickname": "다이어터", "rating": 5, "comment": "식사 대용으로 딱.", "createdAt": "2024-11-17" },
+    { "productId": 604, "nickname": "집밥김선생", "rating": 5, "comment": "레스토랑 안 가도 됩니다.", "createdAt": "2024-09-15" },
+    { "productId": 604, "nickname": "배고픈건못참아", "rating": 4, "comment": "맛있는데 시간이 너무 오래 걸림.", "createdAt": "2024-09-12" },
+    { "productId": 604, "nickname": "밤샘요리", "rating": 5, "comment": "조용해서 밤에 돌려도 됨.", "createdAt": "2024-09-10" },
+    { "productId": 604, "nickname": "얼리어답터", "rating": 5, "comment": "앱이랑 연동돼서 편해요.", "createdAt": "2024-09-08" },
+    { "productId": 604, "nickname": "다이어트식단", "rating": 5, "comment": "퍽퍽살이 부드러워지는 기적.", "createdAt": "2024-09-05" },
 
-  { "productId": 302, "nickname": "요거트매니아", "rating": 5, "comment": "진짜 꾸덕함!", "createdAt": "2024-11-20" },
-  { "productId": 302, "nickname": "익명", "rating": 4, "comment": "가격대비 만족.", "createdAt": "2024-11-18" },
-  { "productId": 302, "nickname": "건강맨", "rating": 4, "comment": "매일 먹기 좋음.", "createdAt": "2024-11-16" },
+    { "productId": 605, "nickname": "치즈덕후", "rating": 5, "comment": "치즈가 눈처럼 갈려 나옵니다.", "createdAt": "2024-08-30" },
+    { "productId": 605, "nickname": "상큼레몬", "rating": 5, "comment": "레몬 제스트 만들 때 필수.", "createdAt": "2024-08-28" },
+    { "productId": 605, "nickname": "설거지니", "rating": 3, "comment": "사이사이에 낀 거 빼기 힘듦.", "createdAt": "2024-08-25" },
+    { "productId": 605, "nickname": "조심조심", "rating": 4, "comment": "스치면 피 봅니다. 조심.", "createdAt": "2024-08-20" },
+    { "productId": 605, "nickname": "방구석쉐프", "rating": 5, "comment": "파스타 위에 뿌리면 셰프 빙의 가능.", "createdAt": "2024-08-15" },
 
-  { "productId": 303, "nickname": "프로틴러버", "rating": 5, "comment": "바삭하고 맛있음.", "createdAt": "2024-11-21" },
-  { "productId": 303, "nickname": "익명", "rating": 4, "comment": "우유랑 먹으면 최고.", "createdAt": "2024-11-19" },
-  { "productId": 303, "nickname": "헬창", "rating": 5, "comment": "단백질 함량 굿!", "createdAt": "2024-11-17" },
+    { "productId": 606, "nickname": "ASMR장인", "rating": 5, "comment": "칼질할 때 소리가 경쾌함.", "createdAt": "2024-08-10" },
+    { "productId": 606, "nickname": "위생철저", "rating": 5, "comment": "나무 도마보다 관리 쉽고 곰팡이 안 생김.", "createdAt": "2024-08-08" },
+    { "productId": 606, "nickname": "예민한칼잡이", "rating": 3, "comment": "칼자국은 좀 남네요.", "createdAt": "2024-08-05" },
+    { "productId": 606, "nickname": "안전제일", "rating": 4, "comment": "미끄럼 방지 패드 있어서 좋음.", "createdAt": "2024-08-01" },
+    { "productId": 606, "nickname": "식세기이모님", "rating": 5, "comment": "식세기 돌려도 돼서 너무 편해요.", "createdAt": "2024-07-28" }
+  ]
 
-  { "productId": 304, "nickname": "스킨케어좋아", "rating": 4, "comment": "향 좋고 시원함.", "createdAt": "2024-11-18" },
-  { "productId": 304, "nickname": "익명", "rating": 5, "comment": "바디 미스트로 딱!", "createdAt": "2024-11-16" },
-  { "productId": 304, "nickname": "몸관리중", "rating": 4, "comment": "촉촉함 오래감.", "createdAt": "2024-11-14" },
+  // 검색화면 탭 구분 위함
+  export const creatorNames = creators.map(c => c.name);
+  export const productCategories = [...new Set(products.map(p => p.category))];
 
-  { "productId": 305, "nickname": "피부관리남", "rating": 5, "comment": "향기 좋고 지속력 좋음.", "createdAt": "2024-11-20" },
-  { "productId": 305, "nickname": "익명", "rating": 4, "comment": "샤워할 때 편함.", "createdAt": "2024-11-17" },
-  { "productId": 305, "nickname": "가성비러버", "rating": 5, "comment": "가성비 최고.", "createdAt": "2024-11-15" },
-
-  { "productId": 306, "nickname": "민감피부", "rating": 4, "comment": "순하고 쿨링감 있음.", "createdAt": "2024-11-21" },
-  { "productId": 306, "nickname": "익명", "rating": 5, "comment": "포맨 제품이라 그런지 향도 좋음.", "createdAt": "2024-11-19" },
-  { "productId": 306, "nickname": "포맨유저", "rating": 4, "comment": "흡수 빠르고 끈적임 없음.", "createdAt": "2024-11-17" }
-
-]
-
-// 검색화면 탭 구분 위함
-export const creatorNames = creators.map(c => c.name);
-export const productCategories = [...new Set(products.map(p => p.category))];
-
-//=================================================================================================//
+  //=================================================================================================//
 
 export const SetListData = [
   {
@@ -175,6 +339,7 @@ export const SetListData = [
   { order: 15, title: 'Love Again', artist: '백현 (BAEKHYUN)' },
   { order: 16, title: '그날들', artist: '정승환' },
 ];
+
 
 export const dummyProducts = [
   {

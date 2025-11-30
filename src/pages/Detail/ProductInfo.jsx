@@ -4,50 +4,49 @@ import * as S from './styles/ProductInfo.style';
 
 const ProductInfo = ({ productData, isLiked, onLikeClick }) => {
   
-  // 공유하기 핸들러
-  const handleShareClick = async () => {
-    const currentUrl = window.location.href; // 현재 페이지 주소 가져오기
+  // 1. 구조 분해 할당 (기본값 설정 추가)
+  const { 
+    category, 
+    name, 
+    rating = 0,  // 값이 없으면 0
+    reviews = 0, // 값이 없으면 0
+    price = 0,
+    discount = 0, // 할인이 없으면 0
+    imageUrl,
+    link
+  } = productData;
 
+  // 2. 가격 계산 로직 (할인이 있을 때만 계산)
+  const hasDiscount = discount > 0;
+  const finalPrice = hasDiscount ? price * (1 - discount / 100) : price;
+  
+  const formattedPrice = Math.floor(finalPrice).toLocaleString(); 
+  const formattedOriginalPrice = price.toLocaleString(); 
+
+  const handleShareClick = async () => {
+    const currentUrl = window.location.href;
     try {
-      // 1. 모바일 등 '공유하기' 메뉴가 지원되는 브라우저인지 확인 (Web Share API)
       if (navigator.share) {
-        await navigator.share({
-          title: productData.name, // 상품명
-          text: '이 상품 한번 확인해보세요!', // 공유 메시지
-          url: currentUrl, // 링크
-        });
+        await navigator.share({ title: name, url: currentUrl });
       } else {
-        // 2. PC 등 공유 메뉴가 없으면 -> 클립보드에 링크 복사
         await navigator.clipboard.writeText(currentUrl);
         alert('상품 링크가 복사되었습니다!');
       }
     } catch (error) {
-      // 사용자가 공유 창을 닫거나 취소했을 때 에러 무시
       console.log('공유 취소');
     }
   };
 
   const renderStars = (score) => {
-    // 별 5개를 만듭니다.
+    const fullStars = Math.floor(score);
     return Array.from({ length: 5 }, (_, index) => {
-      const starIndex = index + 1; // 1, 2, 3, 4, 5번째 별
+      const starIndex = index + 1;
       let fillPercentage = 0;
-
-      if (score >= starIndex) {
-        // 현재 별보다 점수가 크면 -> 100% 채움 (예: 점수 4.5일 때 1,2,3,4번째 별)
-        fillPercentage = 100;
-      } else if (score > index) {
-        // 현재 별에 걸쳐있는 소수점 점수면 -> 소수점 비율만큼 채 움 (예: 점수 4.5일 때 5번째 별은 50%)
-        fillPercentage = (score - index) * 100;
-      } else {
-        // 점수가 현재 별보다 작으면 -> 0% (빈 별)
-        fillPercentage = 0;
-      }
-
+      if (score >= starIndex) fillPercentage = 100;
+      else if (score > index) fillPercentage = (score - index) * 100;
+      
       return (
-        <S.DynamicStar key={index} $percent={fillPercentage}>
-          ★
-        </S.DynamicStar>
+        <S.DynamicStar key={index} $percent={fillPercentage}>★</S.DynamicStar>
       );
     });
   };
@@ -55,12 +54,12 @@ const ProductInfo = ({ productData, isLiked, onLikeClick }) => {
   return (
     <> 
       <S.ProductImageWrapper> 
-        <S.ProductImage src={productData.imageUrl} alt={productData.name} />
+        <S.ProductImage src={imageUrl || "https://via.placeholder.com/400"} alt={name} />
       </S.ProductImageWrapper>
       
       <S.InfoContainer>
         <S.InfoTop>
-          <S.Category>{productData.category}</S.Category>
+          <S.Category>{category}</S.Category>
           <S.Icons>
             <S.IconButton onClick={handleShareClick}>
               <Share2 size={24} color="#555" />
@@ -76,23 +75,28 @@ const ProductInfo = ({ productData, isLiked, onLikeClick }) => {
           </S.Icons>
         </S.InfoTop>
         
-        <S.Title>{productData.name}</S.Title>
+        <S.Title>{name}</S.Title>
         
         <S.Rating>
-          {/* 새로 만든 렌더링 함수 적용 */}
-          <S.Stars>{renderStars(productData.rating)}</S.Stars>
-          <S.RatingText>{productData.rating} / 5.0 ({productData.reviewCount})</S.RatingText>
+          <S.Stars>{renderStars(rating)}</S.Stars>
+          {/* reviews가 숫자이므로 toLocaleString() 사용 가능 */}
+          <S.RatingText>{rating} / 5.0 ({reviews.toLocaleString()}개)</S.RatingText>
         </S.Rating>
 
         <S.PriceInfo>
           <S.Price>
-            <span className="discount">{productData.discountRate}</span>
-            <span className="final-price">{productData.price}</span>
+            {/* 할인이 있을 때만 할인율 표시 */}
+            {hasDiscount && <span className="discount">{discount}%</span>}
+            <span className="final-price">{formattedPrice}원</span>
           </S.Price>
-          <span className="original-price">{productData.originalPrice}</span>
+          
+          {/* 할인이 있을 때만 원래 가격(취소선) 표시 */}
+          {hasDiscount && <S.OriginalPrice>{formattedOriginalPrice}원</S.OriginalPrice>}
         </S.PriceInfo>
 
-        <S.BuyButton href="#">구매하기</S.BuyButton>
+        <S.BuyButton href={link} target="_blank" rel="noopener noreferrer">
+          구매하기
+        </S.BuyButton>
       </S.InfoContainer>
     </>
   );
