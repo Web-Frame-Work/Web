@@ -18,8 +18,11 @@ import {
 } from '../styles/CategoryProductsSection.styles';
 
 import { getProductRatingInfo, creators } from '../../../mocks/setListData';
+import { useNavigate } from 'react-router-dom';
 
 const CategoryProductsSection = ({ products }) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <SectionTitle>제품 카테고리 검색</SectionTitle>
@@ -27,7 +30,6 @@ const CategoryProductsSection = ({ products }) => {
       <ProductList>
         {products.map((p) => {
           const ratingInfo = getProductRatingInfo(p.id);
-
           const creator = creators.find((c) => c.id === p.creatorId);
 
           return (
@@ -74,7 +76,9 @@ const CategoryProductsSection = ({ products }) => {
               </ProductTopRow>
 
               <ProductBottomRow>
-                <DetailButton>제품 상세보기</DetailButton>
+                <DetailButton onClick={() => navigate(`/detail/${p.id}`)}>
+                  제품 상세보기
+                </DetailButton>
               </ProductBottomRow>
             </ProductCard>
           );

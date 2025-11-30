@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import {
   SectionTitle,
   ProductGrid,
@@ -12,6 +14,8 @@ import {
 import { getProductRatingInfo } from '../../../mocks/setListData';
 
 const CreatorProductsSection = ({ products }) => {
+  const navigate = useNavigate();
+
   if (!products || products.length === 0) {
     return (
       <>
@@ -34,7 +38,11 @@ const CreatorProductsSection = ({ products }) => {
           const ratingInfo = getProductRatingInfo(p.id);
 
           return (
-            <ProductCard key={p.id}>
+            <ProductCard
+              key={p.id}
+              onClick={() => navigate(`/detail/${p.id}`)}
+              style={{ cursor: 'pointer' }}
+            >
               <ProductImageBox>
                 <img src={p.image} alt={p.name} />
               </ProductImageBox>
