@@ -6,9 +6,16 @@ const CreatorBanner = ({ creator }) => {
     <S.Banner>
       <S.ProfileImage src={creator.image} alt={creator.name} />
       <S.CreatorName>{creator.name}</S.CreatorName>
+      
       <S.CreatorJob>
-        {creator.job || `${creator.category} 크리에이터`}
+        {creator.description}
       </S.CreatorJob>
+
+      {creator.platforms && (
+        <div style={{ marginTop: '10px', fontSize: '14px', color: '#888' }}>
+          활동 플랫폼: {creator.platforms.join(', ')} (팔로워 {creator.followers})
+        </div>
+      )}
     </S.Banner>
   );
 };
