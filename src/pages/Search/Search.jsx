@@ -93,7 +93,7 @@ const Search = () => {
 
     const ids = creatorRecommendedProducts[usedCreator.id] || [];
 
-    return ids.map((id) => products.find((p) => p.id === id)).filter(Boolean); // undefined 제거
+    return ids.map((id) => products.find((p) => p.id === id)).filter(Boolean);
   }, [usedCreator]);
 
   return (
@@ -110,7 +110,10 @@ const Search = () => {
       />
 
       {mode === 'creator' && usedCreator && (
-        <CreatorSection creator={usedCreator} />
+        <CreatorSection
+          creator={usedCreator}
+          onClickCreator={() => navigate(`/creator/${usedCreator.id}`)}
+        />
       )}
 
       {mode === 'creator' ? (
