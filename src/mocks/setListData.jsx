@@ -54,7 +54,34 @@
       "platforms": ["YouTube", "Instagram"],
       "followers": "1.62M",
       "description": "세상의 모든 요리와 주방 기구 리뷰하는 크리에이터."
-    }
+    },
+    {
+      "id": 7,
+      "name": "빠니보틀",
+      "category": ["여행","테크"],
+      "image": "/assets/image/paniBottle.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "2.53M",
+      "description": "전 세계를 여행하고 라이프스타일을 보여주는 크리에이터."
+    },
+        {
+      "id": 8,
+      "name": "잇섭",
+      "category": ["테크", "주방 기구"],
+      "image": "/assets/image/itsub.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "2.79M",
+      "description": "테크에 관련된, 관심있는 것은 무엇이든 리뷰하는 크리에이터."
+    },
+        {
+      "id": 9,
+      "name": "주연",
+      "category": ["테크", "뷰티"],
+      "image": "/assets/image/zuyoni.png",
+      "platforms": ["YouTube", "Instagram"],
+      "followers": "1.46M",
+      "description": "호기심 많고 솔직하게 전자제품을 리뷰하는 크리에이터."
+    },
   ]
 
 
@@ -99,7 +126,28 @@
     {"id":603,"name":"롯지 무쇠 팬 10인치","category":"주방 기구","price":54900,"discount":0,"image":"/assets/image/603.png","link":"https://www.coupang.com/vp/products/6597892765?itemId=14914224324&vendorItemId=73924099039&src=1042503&spec=10304025&addtag=400&ctag=6597892765&lptag=6597892765-14914224324&itime=20251129001501&pageType=PRODUCT&pageValue=6597892765&wPcid=17634361969766645580404&wRef=www.google.com&wTime=20251129001501&redirect=landing&gclid=CjwKCAiAraXJBhBJEiwAjz7MZc7E0Yl5OhOkB188HHI8TN2WNOUgp71xpPbFleSlvVEcbVje-9Jb5BoCTygQAvD_BwE&mcid=9a2cf951511e400fbab0214e75ff12aa&campaignid=22815108882&adgroupid=","creatorId":6},
     {"id":604,"name":"아노바 수비드 머신 3.0","category":"주방 기구","price":336170,"discount":35,"image":"/assets/image/604.png","link":"https://anovaculinary.com/ko/products/anova-precision-cooker-3","creatorId":6},
     {"id":605,"name":"마이크로플레인 제스터","category":"주방 기구","price":52000,"discount":50,"image":"/assets/image/605.png","link":"https://chef.so/product/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%94%8C%EB%A0%88%EC%9D%B8%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%A0%9C%EC%8A%A4%ED%84%B0-%EA%B0%95%ED%8C%90/1090/category/353/display/1/","creatorId":6},
-    {"id":606,"name":"에피큐리언 도마 (대)","category":"주방 기구","price":75000,"discount":0,"image":"/assets/image/606.png","link":"https://elcuizen.com/product/%EC%97%90%ED%94%BC%ED%81%90%EB%A6%AC%EC%96%B8-%EC%B9%98%EC%A6%88%EB%B3%B4%EB%93%9C-%EC%82%AC%EA%B0%81-%EB%82%B4%EC%B8%84%EB%9F%B4-made-in-usa/1896/category/106/display/1/","creatorId":6}
+    {"id":606,"name":"에피큐리언 도마 (대)","category":"주방 기구","price":75000,"discount":0,"image":"/assets/image/606.png","link":"https://elcuizen.com/product/%EC%97%90%ED%94%BC%ED%81%90%EB%A6%AC%EC%96%B8-%EC%B9%98%EC%A6%88%EB%B3%B4%EB%93%9C-%EC%82%AC%EA%B0%81-%EB%82%B4%EC%B8%84%EB%9F%B4-made-in-usa/1896/category/106/display/1/","creatorId":6},
+
+    {"id":701,"name":"스위스 밀리터리 캐리어 20인치","category":"여행","price":208000,"discount":57,"image":"/assets/image/701.png","link":"https://www.musinsa.com/products/2918117","creatorId":7},
+    {"id":702,"name":"웨일크루 빅오르카 원터치 텐트","category":"여행","price":29000,"discount":15,"image":"/assets/image/702.png","link":"https://www.coupang.com/vp/products/8763547179?itemId=25484053326&vendorItemId=92681204684&src=1032034&spec=10305198&addtag=400&ctag=8763547179&lptag=I25484053326&itime=20251130154623&pageType=PRODUCT&pageValue=8763547179&wPcid=17644849038784821089787&wRef=prod.danawa.com&wTime=20251130154623&redirect=landing&mcid=2835225701434a95b259be5b336ecd0c","creatorId":7},
+    {"id":703,"name":"뉴엔 크로스백 V21","category":"여행","price":34550,"discount":10,"image":"/assets/image/703.png","link":"https://item.gmarket.co.kr/Item?spm=gmktpc.searchlist.topclickeditem.d0_0.3f5e3042T780rr&goodscode=1789225564&utparam-url=%7B%22scene%22%3A%22search%22%2C%22sub_scene%22%3A%22main_srp%22%2C%22x_object_id%22%3A%221789225564%22%2C%22x_object_type%22%3A%22item%22%2C%22x_sku_id%22%3A%220%22%2C%22pageIndex%22%3A%220%22%2C%22pagePos%22%3A%220%22%2C%22pageSize%22%3A%221%22%2C%22listno%22%3A%220%22%2C%22sort%22%3A%22popularity%22%2C%22searchScenario%22%3A%22keyword%22%2C%22query%22%3A%22%EC%88%84%EB%8D%94%EB%B0%B1%22%2C%22pvid%22%3A%2218f8de8575a7486e88bc86e1a49445e6%22%2C%22pvid_sys%22%3A%22gmarket%20server%22%2C%22search_session_id%22%3A%22a82fb1a2-4aa5-495f-88b6-a856e8abb4ed%22%2C%22origin_price%22%3A%2237600%22%2C%22promotion_price%22%3A%2236370%22%2C%22coupon_price%22%3A%2234560%22%2C%22ab_buckets%22%3A%22%22%2C%22trafficType%22%3A%22organic%22%7D","creatorId":7},
+    {"id":704,"name":"주파집 여행용 멀티 어댑터","category":"여행","price":25900,"discount":25,"image":"/assets/image/704.png","link":"https://www.coupang.com/vp/products/7235555025?itemId=18370962461&vendorItemId=85514465331&src=1032034&spec=10305197&addtag=400&ctag=7235555025&lptag=I18370962461&itime=20251130160140&pageType=PRODUCT&pageValue=7235555025&wPcid=17644849038784821089787&wRef=prod.danawa.com&wTime=20251130160140&redirect=landing&mcid=c92b16dfc0e84e93838408809ef3b45c","creatorId":7},
+    {"id":705,"name":"삼성전자 PD PPS 45W 배터리팩","category":"테크","price":46000,"discount":10,"image":"/assets/image/705.png","link":"https://www.gmarket.co.kr/n/search?keyword=%ED%9C%B4%EB%8C%80%ED%8F%B0%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC&jaehuid=200002657&service_id=elecdn&lcd=100000056&itemno=4364705277","creatorId":7},
+    {"id":706,"name":"고프로 히어로13","category":"테크","price":494060,"discount":15,"image":"/assets/image/706.png","link":"https://www.coupang.com/vp/products/8449412969?itemId=24120280664&vendorItemId=91139468847&src=1032034&spec=10305197&addtag=400&ctag=8449412969&lptag=I24120280664&itime=20251130155331&pageType=PRODUCT&pageValue=8449412969&wPcid=17644849038784821089787&wRef=prod.danawa.com&wTime=20251130155331&redirect=landing&mcid=3aac1378e2424526abfec56822a30903","creatorId":7},
+
+    {"id":801,"name":"BOSE QC 울트라 헤드폰 2세대","category":"테크","price":508620,"discount":24,"image":"/assets/image/801.png","link":"https://www.11st.co.kr/products/8809252478?service_id=elecdn&utm_term=&utm_campaign=%B4%D9%B3%AA%BF%CDpc_%B0%A1%B0%DD%BA%F1%B1%B3%B1%E2%BA%BB&utm_source=%B4%D9%B3%AA%BF%CD_PC_PCS&utm_medium=%B0%A1%B0%DD%BA%F1%B1%B3","creatorId":8},
+    {"id":802,"name":"로지텍 MX MASTER 4","category":"테크","price":179000,"discount":10,"image":"/assets/image/802.png","link":"https://www.coupang.com/vp/products/9101803312?itemId=26756813984&vendorItemId=93727761192&src=1032034&spec=10305197&addtag=400&ctag=9101803312&lptag=I26756813984&itime=20251130182000&pageType=PRODUCT&pageValue=9101803312&wPcid=17644849038784821089787&wRef=prod.danawa.com&wTime=20251130182000&redirect=landing&mcid=d0ebc94c48444117908b3ed5eab9314a","creatorId":8},
+    {"id":803,"name":"린클 이지","category":"주방 기구","price":509000,"discount":32,"image":"/assets/image/803.png","link":"https://reenclestore.com/product/%EB%A6%B0%ED%81%B4-%EC%9D%B4%EC%A7%80-%EC%9D%8C%EC%8B%9D%EB%AC%BC%EC%B2%98%EB%A6%AC%EA%B8%B0-%EB%AF%B8%EC%83%9D%EB%AC%BC-%EC%9D%8C%EC%8B%9D%EB%AC%BC-%EC%93%B0%EB%A0%88%EA%B8%B0-%EB%B6%84%EC%87%84%EA%B8%B0-%EC%9D%8C%EC%B2%98%EA%B8%B0reencle-easy/722","creatorId":8},
+    {"id":804,"name":"드리미 Aqua10 울트라 롤러","category":"테크","price":1690000,"discount":20,"image":"/assets/image/804.png","link":"https://anovaculinary.com/ko/products/anova-precision-cooker-3","creatorId":8},
+    {"id":805,"name":"뱀부랩 P1S 콤보 3D 프린터","category":"테크","price":842020,"discount":25,"image":"/assets/image/805.png","link":"https://www.coupang.com/vp/products/8680411050?itemId=25198985427&vendorItemId=92195604639&src=1032034&spec=10305199&addtag=400&ctag=8680411050&lptag=I25198985427&itime=20251130183154&pageType=PRODUCT&pageValue=8680411050&wPcid=17644849038784821089787&wRef=prod.danawa.com&wTime=20251130183154&redirect=landing&mcid=d1edc17adf154f3489a1786984d8965c","creatorId":8},
+    {"id":806,"name":"G갤럭시 XR","category":"테크","price":2832500,"discount":10,"image":"/assets/image/806.png","link":"https://www.skstoa.com/display/goods/57734703?mediaCode=EP16&utm_source=danawa&utm_medium=affiliate&utm_campaign=shopping&service_id=elecdn","creatorId":8},
+
+    {"id":901,"name":"샥즈 오픈 닷 원","category":"테크","price":260090,"discount":5,"image":"/assets/image/901.png","link":"https://smartstore.naver.com/vitamix/products/250725308","creatorId":9},
+    {"id":902,"name":"키크론 B1 PRO 풀배열","category":"테크","price":47000,"discount":20,"image":"/assets/image/902.png","link":"https://www.coupang.com/vp/products/8539753402?itemId=24723767293&vendorItemId=92261752188&src=1139000&spec=10799999&addtag=400&ctag=8539753402&lptag=AF4886990&itime=20251130184438&pageType=PRODUCT&pageValue=8539753402&wPcid=17644849038784821089787&wRef=www.youtube.com&wTime=20251130184438&redirect=landing&traceid=V0-181-8b592dcc93f13966&mcid=3f1a9790f4e94c378cdb2ea79b34da17&campaignid=&clickBeacon=&imgsize=&pageid=&sig=&subid=&campaigntype=&puid=&ctime=&portal=&landing_exp=&placementid=&puidType=&contentcategory=&tsource=&deviceid=&contenttype=&token=&impressionid=&requestid=&contentkeyword=&offerId=&subparam=","creatorId":9},
+    {"id":903,"name":"마샬 메이저5","category":"테크","price":160000,"discount":0,"image":"/assets/image/903.png","link":"https://www.e-himart.co.kr/app/goods/goodsDetail?goodsNo=0021973127&fromShop=dnw&utm_source=dnw&utm_medium=PRICE&utm_campaign=dnw&service_id=elecdn","creatorId":9},
+    {"id":904,"name":"하이센스 U7N 85인치","category":"테크","price":1829000,"discount":20,"image":"/assets/image/904.png","link":"https://www.coupang.com/vp/products/8333895328?itemId=24373748821&vendorItemId=91388921832&sourceType=h5_live","creatorId":9},
+    {"id":905,"name":"삼성전자 갤럭시탭 S10 FE","category":"테크","price":601820,"discount":13,"image":"/assets/image/905.png","link":"https://smartstore.naver.com/smartcamera/products/11618330603","creatorId":9},
+    {"id":906,"name":"다이슨 에어랩 코안다2x","category":"뷰티","price":879000,"discount":0,"image":"/assets/image/906.png","link":"https://www.dyson.co.kr/airwrap-co-anda2x-straight-wavy-ceramic-pink-rose-gold?utm_source=youtube&utm_medium=p_social&utm_campaign=hc_590_influencer&utm_content=earned_juyeon-video---productreview","creatorId":9}
   ]
 
   export const creatorRecommendedProducts = {
@@ -108,7 +156,10 @@
     3: [301, 302, 303, 304, 305, 306],
     4: [401, 402, 403, 404, 405, 406],
     5: [501, 502, 503, 504, 505, 506],
-    6: [601, 602, 603, 604, 605, 606]
+    6: [601, 602, 603, 604, 605, 606],
+    7: [701, 702, 703, 704, 705, 706],
+    8: [801, 802, 803, 804, 805, 806],
+    9: [901, 902, 903, 904, 905, 906],
   };  
 
 
@@ -307,7 +358,95 @@
     { "productId": 606, "nickname": "위생철저", "rating": 5, "comment": "나무 도마보다 관리 쉽고 곰팡이 안 생김.", "createdAt": "2024-08-08" },
     { "productId": 606, "nickname": "예민한칼잡이", "rating": 3, "comment": "칼자국은 좀 남네요.", "createdAt": "2024-08-05" },
     { "productId": 606, "nickname": "안전제일", "rating": 4, "comment": "미끄럼 방지 패드 있어서 좋음.", "createdAt": "2024-08-01" },
-    { "productId": 606, "nickname": "식세기이모님", "rating": 5, "comment": "식세기 돌려도 돼서 너무 편해요.", "createdAt": "2024-07-28" }
+    { "productId": 606, "nickname": "식세기이모님", "rating": 5, "comment": "식세기 돌려도 돼서 너무 편해요.", "createdAt": "2024-07-28" },
+
+    /* ===============================
+      크리에이터 7 - 빠니보틀 (productId 701~706)
+      =============================== */
+    { "productId": 701, "nickname": "역마살인생", "rating": 5, "comment": "유럽 돌길에서도 바퀴 안 빠짐. 튼튼함 그 자체.", "createdAt": "2025-10-12" },
+    { "productId": 701, "nickname": "수화물던지지마", "rating": 4, "comment": "기스 좀 나는데 어차피 막 쓸 거라 상관없음. 스티커 붙이면 됨.", "createdAt": "2025-09-28" },
+    { "productId": 701, "nickname": "보부상", "rating": 5, "comment": "확장 기능 있어서 기념품 꽉꽉 채워옴. 지퍼 안 터짐.", "createdAt": "2025-09-15" },
+    { "productId": 701, "nickname": "저가항공매니아", "rating": 5, "comment": "기내 반입 사이즈 딱 맞음. 눈치 안 봐도 돼서 편함.", "createdAt": "2025-08-20" },
+
+    { "productId": 702, "nickname": "한강피크닉", "rating": 5, "comment": "던지면 펴짐. 접는 건 유튜브 보고 3번 연습하니 됨.", "createdAt": "2025-05-20" },
+    { "productId": 702, "nickname": "방구석캠퍼", "rating": 3, "comment": "방수 성능은 쏘쏘. 폭우 쏟아지는 날엔 집이 최고.", "createdAt": "2025-06-11" },
+    { "productId": 702, "nickname": "가성비최고", "rating": 5, "comment": "이 가격에 이 퀄리티면 땡큐죠. 치킨 한 마리 값.", "createdAt": "2025-04-05" },
+    { "productId": 702, "nickname": "모기밥", "rating": 4, "comment": "메쉬망 촘촘해서 벌레는 안 들어오는데 바람도 잘 안 들어옴.. 더움.", "createdAt": "2025-07-15" },
+
+    { "productId": 703, "nickname": "소매치기조심", "rating": 5, "comment": "앞으로 메기 딱 좋음. 여권이랑 지갑 넣기 편해요.", "createdAt": "2025-11-01" },
+    { "productId": 703, "nickname": "패션테러리스트", "rating": 4, "comment": "디자인은 투박한데 수납력은 인정. 물병도 들어감.", "createdAt": "2025-10-22" },
+    { "productId": 703, "nickname": "남미여행준비", "rating": 5, "comment": "칼로 찢어도 안 찢어질 것 같은 재질. 든든함.", "createdAt": "2025-09-05" },
+
+    { "productId": 704, "nickname": "세계일주꿈나무", "rating": 5, "comment": "이거 하나면 전 세계 콘센트 정복 가능. 필수템.", "createdAt": "2025-08-15" },
+    { "productId": 704, "nickname": "짐줄이기", "rating": 4, "comment": "약간 묵직하긴 한데 멀티탭 안 들고 다녀도 돼서 좋음.", "createdAt": "2025-07-30" },
+    { "productId": 704, "nickname": "헐거워요", "rating": 3, "comment": "유럽에서 썼는데 콘센트 구멍이 좀 헐거워서 자꾸 빠짐.", "createdAt": "2025-06-12" },
+
+    { "productId": 705, "nickname": "배터리광탈", "rating": 5, "comment": "노트북까지 충전돼서 카페 갈 때 콘센트 안 찾아도 됨.", "createdAt": "2025-11-10" },
+    { "productId": 705, "nickname": "충전의노예", "rating": 5, "comment": "고속충전 속도 미쳤음. 잠깐 꽂아두면 50% 참.", "createdAt": "2025-10-05" },
+    { "productId": 705, "nickname": "벽돌인줄", "rating": 3, "comment": "성능은 좋은데 너무 무거움. 호신용 무기 가능.", "createdAt": "2025-09-20" },
+
+    { "productId": 706, "nickname": "브이로거지망생", "rating": 5, "comment": "손떨방 기능이 외계인 고문 수준. 뛰면서 찍어도 스무스함.", "createdAt": "2025-11-20" },
+    { "productId": 706, "nickname": "발열주의", "rating": 3, "comment": "4K로 오래 찍으면 뜨거워져서 꺼짐 ㅠㅠ 여름엔 쥐약.", "createdAt": "2025-11-02" },
+    { "productId": 706, "nickname": "수중촬영", "rating": 5, "comment": "방수 하우징 없이 물에 들어가도 멀쩡함. 색감 굿.", "createdAt": "2025-08-15" },
+    { "productId": 706, "nickname": "밤눈어둡", "rating": 4, "comment": "낮에는 최강인데 밤에는 노이즈 자글자글함.", "createdAt": "2025-10-01" },
+
+    /* ===============================
+      크리에이터 8 - 잇섭 (productId 801~806)
+      =============================== */
+    { "productId": 801, "nickname": "막귀탈출", "rating": 5, "comment": "노캔 켜는 순간 나만의 우주가 펼쳐짐. 지하철 소음 순삭.", "createdAt": "2025-11-15" },
+    { "productId": 801, "nickname": "머리커요", "rating": 4, "comment": "요다 현상 조금 있는데 착용감은 편함. 안경 써도 안 아픔.", "createdAt": "2025-10-30" },
+    { "productId": 801, "nickname": "텅장주의", "rating": 3, "comment": "가격이 사악하지만 성능 보고 참습니다. 멀티포인트 가끔 버벅임.", "createdAt": "2025-10-10" },
+    { "productId": 801, "nickname": "음질중시", "rating": 5, "comment": "저음이 둥둥거리는 게 딱 내 취향. 공간 음향 신기함.", "createdAt": "2025-09-05" },
+
+    { "productId": 802, "nickname": "손목지킴이", "rating": 5, "comment": "이거 쓰고 손목 터널 증후군 나았습니다. 그립감 예술.", "createdAt": "2025-09-25" },
+    { "productId": 802, "nickname": "무한휠중독", "rating": 5, "comment": "엑셀 스크롤 내릴 때 쾌감 쩔어요. 업무 효율 200% 상승.", "createdAt": "2025-09-12" },
+    { "productId": 802, "nickname": "끈적끈적", "rating": 3, "comment": "오래 쓰면 고무 부분이 끈적해질 것 같은 불길한 예감.", "createdAt": "2025-08-20" },
+    { "productId": 802, "nickname": "작은손비추", "rating": 4, "comment": "손 작은 사람은 마우스가 버거울 수 있음. 묵직함.", "createdAt": "2025-10-01" },
+
+    { "productId": 803, "nickname": "음쓰지옥탈출", "rating": 5, "comment": "삶의 질 수직 상승. 엘리베이터 눈치 안 봐도 됨.", "createdAt": "2025-08-20" },
+    { "productId": 803, "nickname": "비위약함", "rating": 4, "comment": "한약 냄새+흙 냄새가 좀 나긴 하는데 썩은 내보단 나음.", "createdAt": "2025-08-05" },
+    { "productId": 803, "nickname": "미생물집사", "rating": 5, "comment": "미생물 키우는 재미가 쏠쏠함. 귤껍질 주면 좋아함.", "createdAt": "2025-09-10" },
+
+    { "productId": 804, "nickname": "청소는장비빨", "rating": 5, "comment": "물걸레랑 흡입 동시에 돼서 시간 절약 대박. 머리카락 안 엉킴.", "createdAt": "2025-11-18" },
+    { "productId": 804, "nickname": "머니터져", "rating": 3, "comment": "가격이 너무 비쌈. 오수통 비우는 건 여전히 귀찮음.", "createdAt": "2025-11-01" },
+    { "productId": 804, "nickname": "구석청소", "rating": 4, "comment": "모서리까지 닦이는 게 신기함. 근데 좀 무거워서 팔 아픔.", "createdAt": "2025-10-15" },
+
+    { "productId": 805, "nickname": "메이커스", "rating": 5, "comment": "출력 속도가 말이 안 됨. 뱀부랩 찬양해. 결과물 퀄리티 미쳤음.", "createdAt": "2025-10-15" },
+    { "productId": 805, "nickname": "소음공해", "rating": 4, "comment": "팬 소리가 좀 커서 잘 때는 못 돌림. 베란다 필수.", "createdAt": "2025-09-30" },
+    { "productId": 805, "nickname": "멀티컬러", "rating": 5, "comment": "AMS로 색깔 바꿔가며 뽑는 재미가 있음. 똥이 많이 나오긴 함.", "createdAt": "2025-11-05" },
+
+    { "productId": 806, "nickname": "레디플레이어원", "rating": 5, "comment": "미래에 온 것 같음. 해상도 미쳤다. 눈앞에 있는 것 같음.", "createdAt": "2025-11-28" },
+    { "productId": 806, "nickname": "안경잽이", "rating": 3, "comment": "안경 쓰고 착용하기 좀 불편함. 1시간 쓰면 목 뻐근함.", "createdAt": "2025-11-25" },
+    { "productId": 806, "nickname": "얼리어답터", "rating": 4, "comment": "신기하긴 한데 아직 할 수 있는 콘텐츠가 별로 없음. 넷플릭스 머신.", "createdAt": "2025-11-20" },
+    { "productId": 806, "nickname": "가격실화냐", "rating": 3, "comment": "기술력은 인정하는데 이 가격이면 중고차를...", "createdAt": "2025-11-15" },
+
+    /* ===============================
+      크리에이터 9 - 주연 (productId 901~906)
+      =============================== */
+    { "productId": 901, "nickname": "러닝크루", "rating": 5, "comment": "귀 안 막아서 안전하고 착용감 안 느껴짐. 뛰면서 듣기 최고.", "createdAt": "2025-10-20" },
+    { "productId": 901, "nickname": "베이스둥둥", "rating": 4, "comment": "오픈형치고 저음 괜찮은데 조용한 도서관에선 소리 샘.", "createdAt": "2025-10-05" },
+    { "productId": 901, "nickname": "귀걸이인줄", "rating": 5, "comment": "디자인이 너무 예쁨. 액세서리 같아서 데일리로 낌.", "createdAt": "2025-09-15" },
+
+    { "productId": 902, "nickname": "데스크테리어", "rating": 5, "comment": "화이트 셋업에 찰떡. 디자인 너무 예쁘고 타건감 쫀득함.", "createdAt": "2025-11-12" },
+    { "productId": 902, "nickname": "개발자", "rating": 3, "comment": "방향키 위치가 좀 적응 안 됨. 예뻐서 용서함.", "createdAt": "2025-11-01" },
+    { "productId": 902, "nickname": "맥유저", "rating": 5, "comment": "맥이랑 호환 완벽함. 가벼워서 카페 들고 다니기 좋음.", "createdAt": "2025-10-20" },
+
+    { "productId": 903, "nickname": "힙스터", "rating": 5, "comment": "목에 걸고 다니면 패션 완성. 소리는 덤. 사진 잘 나옴.", "createdAt": "2025-09-10" },
+    { "productId": 903, "nickname": "착용감무엇", "rating": 3, "comment": "오래 끼면 귀 눌려서 아픔. 예쁜 쓰레기..까진 아니고 예쁜 평타템.", "createdAt": "2025-08-25" },
+    { "productId": 903, "nickname": "락스피릿", "rating": 4, "comment": "기타 소리는 기가 막힘. 배터리 변강쇠라 충전 까먹어도 됨.", "createdAt": "2025-09-01" },
+
+    { "productId": 904, "nickname": "집순이", "rating": 5, "comment": "영화관 갈 필요 없음. 불 끄고 넷플릭스 보면 극락.", "createdAt": "2025-11-22" },
+    { "productId": 904, "nickname": "거거익선", "rating": 5, "comment": "85인치 압도감 장난 아님. 이 가격에 이 크기라니 가성비 갑.", "createdAt": "2025-11-15" },
+    { "productId": 904, "nickname": "선명도", "rating": 4, "comment": "화질 좋은데 업스케일링은 대기업 거보단 약간 부족함.", "createdAt": "2025-10-30" },
+
+    { "productId": 905, "nickname": "필기머신", "rating": 5, "comment": "공부용으로 딱임. 민트 색상 실물 깡패.", "createdAt": "2025-10-28" },
+    { "productId": 905, "nickname": "고사양게임", "rating": 3, "comment": "원신 돌리기엔 좀 버거움. 영상 시청이랑 필기만 하세요.", "createdAt": "2025-10-10" },
+    { "productId": 905, "nickname": "가성비태블릿", "rating": 5, "comment": "펜 기본 포함이라 아이패드보다 경제적임. 굿노트 잘 됨.", "createdAt": "2025-09-25" },
+
+    { "productId": 906, "nickname": "똥손구원", "rating": 5, "comment": "대충 말아도 미용실 다녀온 머리 됨. 아침 준비 시간 반으로 줄음.", "createdAt": "2025-11-25" },
+    { "productId": 906, "nickname": "텅장", "rating": 4, "comment": "너무 비싼데 뽕 뽑으려고 매일 씀. 머릿결 덜 상하는 느낌.", "createdAt": "2025-11-18" },
+    { "productId": 906, "nickname": "지속력", "rating": 3, "comment": "비 오는 날은 컬이 금방 풀림. 스프레이 필수.", "createdAt": "2025-10-15" },
+    { "productId": 906, "nickname": "선물용", "rating": 5, "comment": "여자친구 사줬는데 좋아 죽음. 센스 있는 남친 등극.", "createdAt": "2025-11-11" }
   ]
 
   // 검색화면 탭 구분 위함
