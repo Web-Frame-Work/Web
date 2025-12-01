@@ -1,3 +1,23 @@
+## 🚀 프로젝트 실행 환경 (Execution Environment)
+
+본 프로젝트는 **React + Vite 기반 웹 서비스**입니다.
+
+## ▶️ 프로젝트 실행 방법 (How to Run)
+
+프로젝트를 실행하기 위한 전체 과정은 아래와 같습니다.
+
+### 1) 패키지 설치
+
+`npm install`
+
+### 2) 개발 서버 실행
+
+`npm run dev`
+
+### 3) 브라우저에서 확인
+
+`http://localhost:5173`
+
 ## 🤝 협업 규칙
 
 ### 🌐 Git-flow
