@@ -98,7 +98,7 @@ export const Stars = styled.div`
   letter-spacing: 1px;
 `;
 
-// [새로 만듦] 소수점 비율대로 색칠되는 별 ⭐
+// 소수점 비율대로 색칠되는 별
 export const DynamicStar = styled.span`
   /* 그라데이션 배경 생성: 왼쪽부터 $percent%까지는 노랑, 그 뒤는 회색 */
   background: linear-gradient(
@@ -113,8 +113,6 @@ export const DynamicStar = styled.span`
   
   display: inline-block;
 `;
-
-/* FullStar, EmptyStar는 이제 필요 없으므로 삭제하셔도 됩니다. */
 
 export const RatingText = styled.span`
   font-size: 14px;

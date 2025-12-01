@@ -4,7 +4,7 @@ import * as S from './styles/ProductInfo.style';
 
 const ProductInfo = ({ productData, isLiked, onLikeClick }) => {
   
-  // 1. 구조 분해 할당 (기본값 설정 추가)
+  // 1. 구조 분해 할당
   const { 
     category, 
     name, 
